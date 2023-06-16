@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        h1{
+            text-align: center;
+        }body{
+            background-color: lightblue;
+            color: darkred;    
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Registration Form
+    </h1>
+    <form action="">
+        <fieldset>
+            <p>
+                <label for="fname">FIRST NAME </label><input type="text">
+            </p>
+            <p>
+                <label for="lname">LAST NAME: </label><input type="text">
+            </p>
+            <p>
+                <label for="dob">DATE OF BIRTH: </label><input type="date">
+            </p>
+            <p>
+                <label for="email">EMAIL ADDRESS </label><input type="email">
+            </p>
+            <p>
+                <label for="mobno">MOBILE NUMBER</label>
+                <input type="number">
+            </p>
+            <p>
+                <label for="gender">GENDER: </label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female 
+                    <input type="radio" name="gender">Other 
+            </p>
+            <p>
+                <label for="address"></label>ADDRESS:
+                <textarea name="address" id="" cols="40" rows="4">Your Address</textarea>
+            </p>
+            <p>
+                <label for="country">COUNTRY</label>
+                <select name="country" id="country">
+                    <option value="country" selected>Pakistan</option>
+                    <option value="country">India</option>
+                    <option value="country">Bangladesh</option>
+                    <option value="country">Other</option>
+                </select>
+            </p>
+            <p>
+                <label for="hobbies">HOBBIES</label>
+                <input type="checkbox" name="" id="">Cricket
+                <input type="checkbox" name="" id="">Hockey
+                <input type="checkbox" name="" id="">Video Game
+            </p>
+            <p>
+                <label for="">QUALIFICATION</label>
+                <table border="1px">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Degree</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Matric</td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Intermediate</td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Graduation</td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Masters</td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                <label for="">COURSES APPLIED FOR</label>
+                <input type="radio" name="courses" id="">Web Development
+                <input type="radio" name="courses" id="">Graphic Designing
+                <input type="radio" name="courses" id="">3D Animation
+                <input type="radio" name="courses" id="">Accounting
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
