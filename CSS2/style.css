@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family:'futurak';
+     src: url('https://staging.tossdown.site/assets/theme_one/fonts/futurak/futurak.ttf') format('truetype'),
+     url('https://staging.tossdown.site/assets/theme_one/fonts/futurak/futurak.ttf') format('ttf');
+     font-weight: normal;
+     font-style: normal;
+     font-variant-ligatures: no-common-ligatures;
+   }
+/* Navbar starts here */
+.nav-container{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+    font-size: 14px;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    text-align: center;
+}
+.main-item{
+    width: 70%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.franchise{
+    border: 1px solid white;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.order{
+    border: 1px solid crimson;
+    background-color: crimson;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+.arrow{
+    background-color: white;
+    color: crimson;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Navbar ends here */
+
+/* brands section */
+.brands{
+    padding-top: 80px;
+    background-color: black;
+    color: white;
+    padding-bottom: 120px;
+    text-align: center;    
+}
+.logo-text{
+    font-family: 'futurak';
+    font-size: xxx-large;
+}
+.brands-main{
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+figure > img{
+    background-color: white;
+    margin: 30px 0;
+    padding: 15px;
+}
+.order-btn{
+    padding: 15px 40px;
+    background: none;
+    color: white;
+    border-radius: 30px;
+    border: 0.1px solid wheat;
+}
+
+/* brands section */
+
+/* Franchise Section Starts here */
+.franchise-main{
+    background-color: rgb(17, 16, 16);
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.franchise-text{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.franchise-hero{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.franchise-hero>div{
+    width: 50%;
+    
+}
+.red-heading{
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: crimson;
+}
+.small-text{
+        font-size: xx-large;
+    }
+.small-text >span {
+    font-size: xx-large;
+}
+.directions{
+    margin-top: 50px;
+}
+.get-direction{
+    border: 1px solid white;
+    padding: 15px 6%;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+/* Franchise Section ends here */
+
+/* Express Franchise Section Starts Here */
+.express{
+    background-color: black;
+    color: white;
+    padding: 60px 0 50px 0;
+    width: 100%;
+}
+.express-main{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.exp-fig>img{
+    background-color: black;
+}
+.exp-fig>figcaption{
+    text-align: center;
+}
+.exp-fig >p {
+    text-align: center;
+}
+/* Express Franchise Section Ends Here */
+
+/* Village Franchise Section */
+.village{
+    background-color: rgb(17, 16, 16);
+    color: white;
+    padding: 50px 0 30px 0;
+}
+.village-sec{
+    width: 100%;
+}
+.village-hero{
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 35px;
+}
+.two{
+    background-color: #28a745;
+    border: none;
+}
+/* Village Franchise Section Ends Here */
+/* Express Franchises Section Starts Here */
+.express-section{
+    background-color: black;
+    padding: 50px 0 40px 0;
+    color: white;
+}
+/* Express Franchises Section Ends Here */
+/* footer Section */
+footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: rgb(17, 16, 16);
+    width: 100%;
+    padding: 40px 50px 0 50px;
+
+}
+footer > div{
+    color: white;
+    width: 90%;
+}
+
+.footer-link {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link a {
+    list-style: none;
+    display: flex;
+    color: #ddd;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 11px;
+}
+/* footer Section ends Here */
