@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Fidel-Black";
+    src: url(fonts/Fidel-Black.woff);
+}
+@font-face {
+    font-family: "Helvetica";
+    src: url(fonts/Helvetica-Neue-WGL.woff);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica, Fidel-Black";
+    background-color: #2f559d;
+}
+
+.front-pg{
+    background-image: url(images/bg1png);
+    height: 123vh;
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px !important;
+    text-align: center;
+    font-size: 18px !important;
+}
+.red{
+    background-color: #d53434 !important;
+    color: white;
+    font-size: 28px;
+    font-family: "Fidel-Black";
+    border-radius: 50px;
+    height: 60px;
+    width: 220px;
+}
+.nav-item{
+    padding-left: 25px;
+}
+.nav-item >a {
+    text-decoration: none;
+    color: white;
+}
+/* Hero Section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-text{
+    position: absolute;
+    left: 300px;
+    top: 250px;
+}
+/* ----------- */
+.heck{
+    background-image: url(images/bg2.png);
+    height: 120vh;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    color: white;
+}
+.headings{
+    text-align: center;
+    font-size: 80px !important;
+    font-family: "Fidel-Black";
+}
+.heck-main{
+    display: flex;
+    justify-content: space-evenly  ;
+}
+.heck-main > div{
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.heck-text{
+    font-size: 32px;
+    line-height: 30px;
+    width: 50% !important;
+    margin-left: 50px !important;
+    padding: 0 20px 0 20px;
+}
+.heck-img{
+    padding-left: 30px;
+}
+.rarity{
+    color: white;
+    padding: 60px 0;
+}

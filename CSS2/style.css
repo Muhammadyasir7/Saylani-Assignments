@@ -18,6 +18,8 @@
     height: 15vh;
     font-size: 14px;
     align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
 }
 .logo{
     width: 30%;
@@ -195,6 +197,50 @@ figure > img{
     background-color: black;
     padding: 50px 0 40px 0;
     color: white;
+
+}.ep-main{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 40px; 
+    
+}
+.two-div{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.ep-div{
+    height: 230px;
+    background-color: white;
+    width: 350px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.ep-div > img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.red-color{
+    color: crimson;
+    font-size: 10px;
+    letter-spacing: 0.8em;
+}
+.ep-div > p {
+    line-height: 12px;
+}
+.social{
+    padding-top: 20px;
+    
+}
+.social-feed{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 /* Express Franchises Section Ends Here */
 /* footer Section */
@@ -208,16 +254,16 @@ footer{
 
 }
 footer > div{
-    color: white;
+    color:  rgba(255, 255, 255, 0.7);
     width: 90%;
 }
 
 .footer-link {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .footer-link a {
     list-style: none;
@@ -225,6 +271,61 @@ footer > div{
     color: #ddd;
     flex-direction: column;
     text-decoration: none;
-    padding: 11px;
+    line-height: 2.5rem;
+    /* padding: 11px; */
+}
+.main-ft{
+    width: 150% !important;
+    padding-right: 30px;
+
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    letter-spacing: 20px;
+}
+.social-icon > a >i {
+    padding: 13px;
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    border-radius: 20px;
+}
+.iicon{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.footer-link > a >img{
+    padding-top: 15px;
+}
+.powered-by-main{
+    background-color: rgb(17, 16, 16);
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid;
+
+}
+.powered-by{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* footer Section ends Here */
+
+@media only screen and (max-width: 750px) {
+    /* footer > div{
+        columns: 12;
+    }
+    .footer-link{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-link >a{
+        display: flex;
+        flex-direction: row;
+    } */
+}
