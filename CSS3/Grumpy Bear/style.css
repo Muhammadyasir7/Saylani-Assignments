@@ -1,0 +1,393 @@
+@font-face {
+    font-family: "Fidel-Black";
+    src: url(fonts/Fidel-Black.woff);
+}
+@font-face {
+    font-family: "Helvetica";
+    src: url(fonts/Helvetica-Neue-WGL.woff);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica, Fidel-Black";
+    background-color: #2f559d;
+}
+.front-pg{
+    background-image: url(images/bg1png);
+    height: 123vh;
+}
+.nav-2{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px !important;
+    text-align: center;
+    font-size: 18px !important;
+}
+.red{
+    background-color: #d53434 !important;
+    color: white;
+    font-size: 28px;
+    font-family: "Fidel-Black";
+    border-radius: 50px;
+    height: 60px;
+    width: 220px;
+}
+.nav-item{
+    padding-left: 25px;
+}
+.nav-item >a {
+    text-decoration: none;
+    color: white !important;
+}
+/* Hero Section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-text{
+    position: absolute;
+    left: 300px;
+    top: 250px;
+}
+/* HECK SECTION STARTS HERE */
+.heck{
+    background-image: url(images/bg2.png);
+    height: 120vh;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    color: white;
+}
+.headings{
+    text-align: center;
+    font-size: 80px !important;
+    font-family: "Fidel-Black";
+}
+.heck-main{
+    display: flex;
+    justify-content: space-evenly  ;
+}
+.heck-main > div{
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.heck-text{
+    font-size: 32px;
+    line-height: 30px;
+    width: 50% !important;
+    margin-left: 50px !important;
+    padding: 0 20px 0 20px;
+}
+.heck-img{
+    padding-left: 30px;
+}
+/* HECK SECTION ENDS HERE */
+
+/* RARITY SECTION STARTS HERE */
+.rarity{
+    color: white;
+    padding: 60px 0;
+    font-family: "Fidel-Black";
+}
+.rarity-main{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 36px;
+    margin: 50px auto;
+}
+.mint{
+    color: #7bd1ff; 
+}
+.st{
+    font-size: 58px;
+    margin: 40px 0px;
+}
+.rarity > h1{
+    font-size: 60px;
+}
+.traits{
+    margin-left: 250px !important;
+    width: 40%;
+}
+.mint-num{
+    float: right;
+}
+.traits >p{
+    line-height: 45px;
+}
+.rarity-text,.mint{
+    line-height: 45px;
+}
+/* RARITY CSS ENDS HERE */
+
+/* ROADMAP CSS STARTS HERE */
+.roadmap{
+    background-image: url(images/bg3-min.png);
+    padding: 100px 10px;
+    height: 250vh;
+}
+.road-main {
+    width: 93%;
+    border: 2px solid;
+    margin: 0 auto;
+    background-color: #5496e3;
+}
+.road-main2 >h1{
+    color: #fce956;
+    font-family: "Fidel-Black";
+    text-align: center;
+    margin: 50px 0;
+    font-size: 80px;
+}
+.rd-hero{
+    width: 85%;
+    margin: 0 auto;
+}
+.roadmap-dis{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: "Roboto";
+}
+.roadmap-dis> p{
+    margin-left: 30px;
+    font-size: 28px;
+}
+
+.imp-nt{
+    display: flex;
+    background-color: #fce956;
+    padding: 20px;
+    margin-bottom: 40px;
+    height: 200px;
+}
+.imp-not{
+    padding: 30px;
+    margin-top: 20px;
+}
+.prcnt{
+    border: 3px solid #000000;
+    padding: 15px 40px;
+    font-size: 48px;
+    font-family: "Fidel-Black";
+}.imp-not >h1{
+    font-family: "Fidel-Black";
+    font-size: xxx-large;
+}
+.imp-not >p{
+    font-family: "Roboto";
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+/* ROADMAP CSS ENDS HERE */
+
+/* TEAM CSS STARTS HERE */
+.team{
+    background-image: url(images/bg4-min.png);
+    height: 100vh;
+}
+.team-head{
+    background-color: transparent !important;
+}
+.team-div{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.teamate{
+    text-align: center;
+}
+.team-name{
+    padding-top: 15px;
+    font-size: 32px;
+    color: white;
+}
+.desig{
+    color: #fce956;
+    font-size: x-large;
+}
+/* TEAM CSS ENDS HERE */
+/* FAQS CSS Starts */
+.faqs{
+    background-color: #5496e3;
+    padding: 50px 20px;
+    font-family: "Roboto";
+}
+.faqs > h1{
+    color: #fce956;
+    font-family: "Fidel-Black";
+    text-align: center;
+    margin: 50px 0;
+    font-size: 80px;
+}
+.faq-div{
+    width: 97%;
+    margin: 0 auto;
+}
+.ques{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.faq-last{
+    text-align: center;
+    padding-bottom: 50px;
+}.faq-last >h1{
+    color: #fce956;
+    font-family: "Fidel-Black";
+}
+.faq-last >p {
+    font-size: x-large;
+}
+/* FAQ's Section Ends here */
+
+/* Footer Section Starts */
+footer{
+    text-align: center;
+    color: white;
+    background-color: #003063;
+    padding: 50px 0 55px 0;
+    line-height: 20px;
+}
+.social-media{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.social-media >a >i{
+    color: white !important;
+    font-size: x-large;
+}
+.footer-text{
+    font-size: 24px;
+    padding-top: 20px;
+    font-family: "Roboto";
+}
+
+
+/* Footer Section Ends */
+
+/* NAVBAR MEDIA QUERY STARTS HERE */
+@media only screen and (max-width: 1100px) {
+    .hero{
+        justify-content: space-around;
+    }
+    .hero>img{
+        width: 450px;
+    }
+
+}
+@media only screen and (max-width: 760px) {
+    .hero>img{
+        display: none;
+    }
+    .hero-text{
+        position: static;
+        width: 350px !important;
+        display: flex !important;
+        justify-content: center;
+        margin-top: 80px;
+       
+    }
+    .navbar-brand>img{
+        width: 150px;
+    }.hero{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        
+    }
+    .mobile{
+        display: flex !important;
+        align-items: center;
+    }
+}
+/* NAVBAR MEDIA QUERY ENDS HERE */
+/* Heck Media Query Starts Here */
+@media only screen and (max-width: 900px) {
+    .heck{
+        height: 140vh;
+    }
+    .heck-text{
+        width: 60% !important;
+        margin-left: 10px !important;
+    }
+    .heck-img{
+        padding-left: 0;
+        width: 40% !important;
+    }.bear-3{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .heck{
+        height: auto;}
+    .heck-main{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }.heck-text{
+        width: 100% !important;
+        font-size: 20px;
+        text-align: center;
+    }
+    .heck-img{
+        width: 100% !important;
+    }.bear-3{
+     width: 100%;
+    }.headings{
+        font-size: 48px !important;
+    }
+}
+/* Heck Media Query Ends Here */
+
+/* RARITY MEDIA QUERY STARTS HERE */
+@media only screen and (max-width: 1100px) {
+    .rarity-main{
+        width: 95%;
+    }
+    .traits{
+        margin-left: 80px !important;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .rarity-main{
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+    }
+    .traits{
+        margin-left: 0px !important;
+    }
+    .rarity-main>div{
+        width: 95%;
+    }.st{
+        font-size: xx-large;
+    }
+}
+/* RARITY MEDIA QUERY STARTS HERE */
+/* FAQS Media query starts here */
+@media only screen and (max-width: 1050px) {
+    .faqs{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .faq-div{
+        width: 100% !important;
+    }
+}
+/* FAQS Media query starts here */
+
+
+/* Footer Media Query */
+@media only screen and (max-width: 765px) {
+    .footer-text, .social-media>a>i{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+}
