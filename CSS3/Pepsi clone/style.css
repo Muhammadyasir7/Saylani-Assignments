@@ -1,3 +1,238 @@
+@font-face {
+    font-family: "Sofia Pro Black";
+    src: url(fonts/SofiaProBlack.ttf);
+}
 *{
+    margin: 0;
+    padding: 0;
     font-family: Sofia Pro Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.nav-sec{
+    background-color: #0065c3 !important;
+    position: fixed !important;
+    width: 100%;
+    z-index: 99999999;
+}
+.navbar-brand >img{
+    margin-left: 20px;
+}
+.nav-text>li>a , .buy-btn{
+    color: #fff !important;
+    font-family: "Sofia Pro Black" !important;
+    font-size: 14px !important;
+    margin-left: 40px;
+}
+.buy-btn{
+    border-radius: 20px;
+    padding: 5px 30px;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+.buy-btn:hover{
+    color: #0065c3 !important;
+    background-color: #fff !important;
+    border: none;
+}
+/* NAVBAR CSS ENDS HERE */
+
+/* HERO SECTION CSS STARTS HERE */
+.hero{
+    background-image: url(images/background.png);
+    height: 120vh;
+}
+.hero-img{
+    display: flex;
+    justify-content: space-around;
+    height: 120vh;
+    align-items: self-end !important;
+}
+.hero-img1{
+    background-image: url(images/hero2.png) !important;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 50%;
+    background-size: 120%;
+}
+.hero-img2{
+    background-image: url(images/unlock.svg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 50%;
+}
+.hero-text{
+    position: relative;
+    top: 350px;
+    width: 70%;
+}.hero-text > p{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-family: "Sofia Pro Black";
+    margin: 70px auto;
+}
+.hero-text > button{
+    margin-left: 150px !important;
+    font-size: 16px !important;
+}
+/* HERO 2 Section CSS STARTS HERE */
+.hero2{
+    background-color: black;
+    height: 100vh;
+}
+.hero2-img{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin: 0 auto !important;
+}
+.hero2-img1{
+    background-image: url(images/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: auto 115%;
+    width: 53vw;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.hero2-img1 >img {
+    position: absolute;
+    top: 100px;
+    right: 120px;
+}
+.hero2-img2{
+    width: 40%;
+    height: 100vh;
+    padding-top: 120px;
+    padding-left: 5px;
+}
+/* HERO 2 Section CSS Ends HERE */
+.hero3{
+    background-image: url(images/bg-3.png);
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}.hero3>div{
+    height: 88vh !important;
+    width: 60%;
+    align-items: center !important;
+}
+.hero3-text{
+    text-align: center !important;
+}
+.hero3-text>h3{
+    font-size: 20px !important;
+    letter-spacing: 0.7px;
+    word-spacing: 0.8% !important;
+    font-family: "Sofia Pro Black";
+    color: white;
+}
+/* HERO3 SECTION CSS ENDS HERE */
+.prom-video{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.prom-video>video{
+    width: 100% !important;
+    height: 100%!important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.promotion-sec{
+    height: 110vh;
+    background-color: #004ca7;
+    display: flex;
+}
+.prom-main{
+    display: flex;
+    align-items: center;
+}
+/* Favourate Flavours CSS Starts here */
+.fvrt{
+    background-image: url(images/04_Generation_BG_D_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.fvrt-main{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.fvrt-text>h1,p{
+    font-family: "Sofia Pro Black";
+    color: #fff;
+}
+.fvrt-text>h1{
+    font-size: 54px;
+    line-height: 55px;
+}
+.fvrt-text > button{
+    margin-left: 0;
+    background-color: white;
+    color: #0065c3 !important;
+}
+/* Favourate Flavours CSS Ends here */
+
+/* Social Feed CSS Starts Here */
+.s-feed{
+    height: 45vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.soc-feed{
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.soc-feed >div{
+    display: flex;
+}
+.s-feed>h1{
+    text-align: center;
+    color: #0065c3;
+    font-family: "Sofia Pro Black";
+    font-size: 58px;
+    word-spacing: 0.02cm !important;
+    margin: 0 auto;
+    padding: 0;
+}
+/* Footer CSS Starts Here */
+footer{
+    height: 45vh;
+    background-color: #0065c3;
+    display: flex;
+}
+.footer-main{
+     display: flex;
+     width: 95%;
+     margin: 0 auto;
+     justify-content: space-between;
+     align-items: center;
+     align-content: center;
+}
+.footer-main>div>p{
+    font-size: 14px;
+}
+.footer-main>div>p>a{
+    text-decoration: none;
+    color: #fff !important;
+    font-family: "Sofia Pro Black";
+}
+.icons-btn{
+    margin-top: 20px;
+    text-align: center;
+}
+.icons-btn>i{
+    font-size: 28px;
+    color: white;
+    padding-left: 20px;
+}
+/* Footer CSS Ends Here */
