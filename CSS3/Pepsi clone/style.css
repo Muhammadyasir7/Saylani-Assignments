@@ -77,7 +77,21 @@
 /* HERO 2 Section CSS STARTS HERE */
 .hero2{
     background-color: black;
-    height: 100vh;
+    height: 110vh;
+}
+.fig-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}.fig-img>figure{
+    padding: 10px;
+}
+figcaption{
+    font-size: 10px;
+    color: white;
+    font-family: "Sofia Pro Black";
+    text-align: center;
+    padding-top: 12px;
 }
 .hero2-img{
     display: flex;
@@ -91,8 +105,10 @@
     background-size: auto 115%;
     width: 53vw;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
     position: relative;
+}.fig-cap{
+    margin: 20px 70px;
 }
 .hero2-img1 >img {
     position: absolute;
@@ -100,14 +116,14 @@
     right: 120px;
 }
 .hero2-img2{
-    width: 40%;
-    height: 100vh;
+    width: 37%;
+    height: 110vh;
     padding-top: 120px;
     padding-left: 5px;
 }
 /* HERO 2 Section CSS Ends HERE */
 .hero3{
-    background-image: url(images/bg-3.png);
+    background-image: url(images/Desktop_Background.png);
     background-repeat: no-repeat;
     height: 90vh;
     background-size: cover;
@@ -129,6 +145,51 @@
     color: white;
 }
 /* HERO3 SECTION CSS ENDS HERE */
+
+/* HERO 4 CSS STARTS HERE */
+.hero4{
+    height: 100vh;
+    background-color: #004ca7;
+}
+.hero4-main{
+    display: flex;
+}
+.hero4-img{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100vh;
+}
+.hero4-img1{
+    /* margin-top: 30px; */
+    height: 50%;
+    width: 100%;
+    padding: 35px;
+}
+.hero4-img2{
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100% !important;
+    position: relative;
+}
+.hero4-img2  img{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid gold; */
+    position: absolute;
+}
+.hero4-sec2{
+    width: 60vw;
+    position: relative;
+}
+.img2-twil{
+    position: absolute;
+    right: 750px;
+    bottom: 40px;
+}
+/* HERO 4 CSS ENDS HERE */
+
+/* VIDEO CSS STARTS HERE */
 .prom-video{
     margin: 0 !important;
     padding: 0 !important;
@@ -139,7 +200,9 @@
     margin: 0 !important;
     padding: 0 !important;
 }
+/* VIDEO CSS Ends HERE */
 
+/* Promotion CSS Starts here */
 .promotion-sec{
     height: 110vh;
     background-color: #004ca7;
@@ -148,6 +211,37 @@
 .prom-main{
     display: flex;
     align-items: center;
+}
+/* Promotion CSS ENDS here */
+.better-sec{
+    background-color: #004ca7;
+    background-image: url(images/PEP_BWP_D.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: left;
+}.better{
+    background-color: #0065c3;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.better>div{
+    background-color: #1437bf;
+    margin-top: 20px;
+}
+.better>div>p{
+    text-align: center;
+    padding-top: 10px;
+}.tag-img{
+    position: relative;
+}.tag-img>img{
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
 }
 /* Favourate Flavours CSS Starts here */
 .fvrt{
