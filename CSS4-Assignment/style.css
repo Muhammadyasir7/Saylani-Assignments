@@ -9,7 +9,7 @@ body{
     justify-content: space-between !important;
     width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin: 30px 0px;
 }
 .nav-logo{
     display: flex;
@@ -17,10 +17,12 @@ body{
 }
 .nav-item-main{
     display: flex;
+    width: 60%;
 }
 .nav-item{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 .nav-item>li,a{
     list-style: none;
@@ -33,5 +35,30 @@ body{
     background-color: #75BF7A;
     color: #fff;
     padding: 10px 20px;
-    
 }
+/* NAVBAR CSS ENDS HERE */
+
+/* HERO CSS STARTS HERE */
+.hero{
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+}
+.hero-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    border: 2px solid saddlebrown;
+}
+.hero-text{
+    width: 40%;
+    border: 2px solid black;
+}
+.hero-text > h1{
+    font-size: 50px;
+}
+.store-icon{
+    margin-top: 90px;
+}
+/* HERO CSS ENDS HERE */
