@@ -23,13 +23,13 @@ body{
     align-items: center;
 }
 .nav-item-main{
-    display: flex;
-    width: 60%;
+    display: flex !important; 
+    width: 60% !important;
 }
 .nav-item{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-evenly !important;
+    width: 100% !important;
     font-family: gilroy-dark;
 }
 .nav-item>li,a{
@@ -213,3 +213,41 @@ h3{
     text-align: center;
 }
 /* FOOTER CSS ENDS HERE */
+
+/* Navbar MEDIA QUERY */
+@media only screen and (max-width: 1100px){
+    .hero{
+        height: auto;
+    }
+    .hero-main{
+        width: 90% !important;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .hero-img{
+        width: 40%;
+    }
+    .hero-img>img{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1025px){
+    .hero-main{
+        width: 98% !important;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-text{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    /* .hero-img>img
+    } */
+}
