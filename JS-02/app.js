@@ -315,3 +315,108 @@ else if(operator === "%"){
 }
 alert(totalAnswer)
 */
+
+// ====================== ASSIGNMENT CHAPTER 12-13 ==========================
+
+// =====QUESTION 01 =======
+
+/*var inputChar = prompt("Enter any character, alphabet or number in Uppercase or Lowercase");
+
+if(inputChar >= 'A' && inputChar <= 'Z'){
+    alert("Your character is in Uppercase")
+}
+else if (inputChar >= 'a' && inputChar <= 'z'){
+    alert("Your character is in Lowercase")
+}else(
+    alert("It's a number")
+)*/
+
+// =====QUESTION 02 Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.
+
+// var numOne = +prompt("Enter first number")
+// var numTwo = +prompt("Enter Second number")
+
+// if(numOne > numTwo){
+//     alert("1st Integar was greater "+ numOne)
+// }
+// else if (numOne < numTwo){
+//     alert("2nd Integar was greater "+ numTwo)
+// }
+// else if( numOne == numTwo){
+//     alert ("Integars are equal")
+// }
+// else{
+//     alert("Type numbers only")
+// }
+
+// ============ QUESTION 03. Write a program that takes input a number from user & state whether the number is positive, negative or zero.
+
+// var inputNum = +prompt("Enter an integar positive, negative or zero to check")
+
+// if(inputNum > 0){
+//     alert("Your Number is Positive Integar")
+// }
+// else if(inputNum < 0){
+//     alert("Your Number is Negative Integar")
+// }
+// else if (inputNum === 0){
+//     alert("Your Number is 0")
+// }
+// else{
+//     alert("Type numbers only")
+// }
+
+// ===========QUESTION 04 Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise
+/*
+var vowel = prompt("Enter an alphabet to check it's a vowel or not !")
+
+if(vowel === "a" ||vowel === "e"||vowel ==="i"||vowel === "o"||vowel ==="u"){
+    alert ("True "+vowel + " is a vowel")
+}else{
+    alert("False "+ vowel+ " is not a vowel")
+}*/
+
+// ==========QUESTION 05 =====================
+
+/*var password = prompt("Enter your password to save");
+var inputPassword = prompt ("Enter your password to Login.");
+
+if(inputPassword === ""){
+    alert("Please enter your password")
+}
+else if(password === inputPassword){
+    alert("Correct! The password you entered matches the original password.")
+}
+else{
+    alert("Incorrect Password")
+}*/
+
+// ==========QUESTION 06 =====================
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";}
+// else{
+// greeting = "Good evening";
+// }
+
+// ==========QUESTION 07 =====================
+
+// var time = +prompt("Enter time in 24hrs format like 1700");
+
+// if(time >= "0000" && time < 1200){
+//     alert ("Good Morning")
+// }
+// else if (time >= 1200 && time < 1700){
+//     alert ("Good Afternoon")
+// }
+// else if (time >= 1700 && time < 2100){
+//     alert ("Good Evening")
+// }
+// else if (time >= 2100 && time < 2359){
+//     alert ("Good Night")
+// }
+// else{
+//     alert("Enter 4 Integars only")
+// }
