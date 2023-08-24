@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(24, 22, 22);
+    color: white;
+}
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
