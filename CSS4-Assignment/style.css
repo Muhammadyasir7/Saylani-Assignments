@@ -163,7 +163,7 @@ h3{
     font-size: 2rem;    
     position: relative;
     left: -40px;
-    top: -20px;
+    top: 6px;
 }
 /* TERE WORKS CSS ENDS HERE */
 
@@ -188,10 +188,13 @@ h3{
 }
 .benefit-sm{
     padding: 20px;
-    width: 40%;
+    width: 50%;
 }
 .num-head{
     display: inline-block;
+}
+.work-hid{
+    display: none;
 }
 /* TERE BENEFITS CSS ENDS HERE */
 
@@ -211,6 +214,9 @@ h3{
 }
 .develop{
     text-align: center;
+}
+.store-show{
+    display: none;
 }
 /* FOOTER CSS ENDS HERE */
 
@@ -232,6 +238,29 @@ h3{
         width: 400px;
     }
 }
+@media only screen and (max-width: 770px){
+    .nav-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .nav-item-main{
+        height: 30vh;
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 !important;
+        padding-left: 0px !important;
+        align-items: center;
+    }.nav-item >li{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
 @media only screen and (max-width: 1025px){
     .hero-main{
         width: 98% !important;
@@ -248,6 +277,145 @@ h3{
         justify-content: center;
         margin-bottom: 20px;
     }
-    /* .hero-img>img
-    } */
+    #mob-num,.apply-btn{
+        width: 200px;
+        font-size: 12px;
+    }.apply-text{
+        font-size: 18px;
+    }
+    .nav-item-main{
+        width: 80% !important;
+        align-items: center !important;
+    }.nav-item{
+        margin-bottom: 0px !important;
+
+    }
+}
+@media only screen and (max-width: 440px){
+    .hero-img>img{
+        width: 300px;
+        height: 300px;
+    }
+    .hero-text>h1{
+        font-size: 40px;
+    }
+}
+/* WORKS MEDIA QUERY */
+@media only screen and (max-width: 1120px){
+    .work-main2{
+        width: 95%;
+    }
+    .apply-main{
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 945px){
+    .work-main2{
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        height: auto;
+    }
+    .sd2{
+        order: -1;
+    }
+    .sd1{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .grp-hid{
+        display: none;
+    }.work-hid{
+        display: inline;
+    }
+}
+/* BENIFITS MEDIA QUERY */
+@media only screen and (max-width: 880px){
+    .benefits{
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefit-sm{
+        width: 99%;
+        text-align: center;
+    }
+    .benefit-middle{
+        display: flex;
+        flex-direction: column-reverse !important ;
+        align-items: end;
+        background-color: #fcf7f7;
+    }
+    .ben-middle{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }.apply-main{
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        text-align: center;
+        align-content: space-around;
+        width: 98%;
+    }.input-div{
+        width: 98%;
+    }.input-div>input{
+        margin-top: 10px;
+    }
+}
+/* Footer Media Query */
+@media only screen and (max-width: 950px){
+    .foter{
+        height: 70vh;
+    }
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        align-items: center;
+        align-content: center; 
+        justify-content: center;
+        width: 100% !important;
+    }
+    .fot-logo{
+        width: 150px;
+        margin-right: 60px !important;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer-div>li{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .store-pix{
+        display: none;
+    }
+    .store-show{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+    }.store-show>img{
+        margin-top: 10px;
+    }.foter{
+        height: auto;
+        width: auto;
+    }h4{
+        font-size: medium;
+    }
+    .sd2>img{
+        width: 220px;
+    }.hero-img>img{
+        width: 250px;
+    }.sd2{
+        background-image: none;
+    }
 }

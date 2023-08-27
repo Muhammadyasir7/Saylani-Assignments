@@ -2,8 +2,16 @@ body{
     background-color: rgb(24, 22, 22);
     color: white;
 }
+.logo{
+    font-size: 28px;
+}
 .nav-main{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+}
+.nav-icon> i{
+    margin-left: 20px;
 }
