@@ -83,6 +83,35 @@ for(i=0;i <bakeryItem.length;i++){
     }
 }
 if(flag == " is not Available"){
-    alert(inputSearch+" is not available")
+    alert("We are sorry."+inputSearch+" is not available")
 }*/
+
+// Write a program to identify the largest number in the given array.A = [24, 53, 78, 91, 12].
+/*
+var newArr = [24, 53, 78, 91, 12];
+var largestNum = [24]
+document.write("Array items: "+newArr +"<br />")
+
+for(i=0; i<newArr.length; i++){
+    if(newArr[i] > largestNum){
+        largestNum = newArr[i]
+    }
+}
+document.write("The largest number is"+largestNum); */
+
+// 9. Write a program to identify the smallest number in the given array. A = [24, 53, 78, 91, 12]
+/*
+var newArr = [24, 53, 78, 91, 12];
+var smallestNum = [24]
+document.write("Array items: "+newArr +"<br />")
+
+for(i=0; i<newArr.length; i++){
+    if(newArr[i] < smallestNum){
+        smallestNum = newArr[i]
+    }
+}
+document.write("The Smallest number is"+smallestNum); */
+
+// 10. Write a program to print multiples of 5 ranging 1 to 100.
+
 
