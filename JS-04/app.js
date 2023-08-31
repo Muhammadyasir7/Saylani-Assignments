@@ -112,24 +112,112 @@ for(i=0; i<newArr.length; i++){
 }
 document.write("The Smallest number is"+smallestNum); */
 
-// 10. Write a program to print multiples of 5 ranging 1 to 100.
+//===== 10. Write a program to print multiples of 5 ranging 1 to 100.
 
+// for(var i = 1; i <= 100;i++){
+//     if(i%5 === 0){
+//         document.write(i+",")
+//     }
+// }
 
 // ================= Chapter 21-25 =================
 
-// 1. Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name.
+//===== 1. Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name.
 
-var firstName = prompt("Enter your first name")
-var lastName = prompt("Enter your last name");
+// var firstName = prompt("Enter your first name")
+// var lastName = prompt("Enter your last name");
 
-var fullName = firstName+" "+lastName;
+// var fullName = firstName+" "+lastName;
 
-alert("Hello "+ fullName)
+// alert("Hello "+ fullName)
 
-// 2. Write a program to take a user input about his favorite mobile phone model. Find and display the length of user input in your browser;
+//====== 2. Write a program to take a user input about his favorite mobile phone model. Find and display the length of user input in your browser;
 
-var mobileModel = prompt("Enter your favorite mobile phone model");
+// var mobileModel = prompt("Enter your favorite mobile phone model");
 
-var lengthOfModel= mobileModel.length;
+// var lengthOfModel= mobileModel.length;
 
-alert(lengthOfModel)
+// document.write("My favorite phone is: "+mobileModel+"<br /> Length of string: "+lengthOfModel)
+
+//===== 3. Write a program to find the index of letter “n” in the word “Pakistani” and display the result in your browser
+
+// var word = "Pakistani";
+// var indexOfWord= word.indexOf("n");
+
+// document.write("String: "+ word+ "<br />")
+// document.write("Index of 'n': "+ indexOfWord)
+
+//===== 4. Write a program to find the last index of letter “l” in the word “Hello World” and display the result in your browser.
+
+// var greeting = "Hello World";
+// var greetingLastIndex = greeting.lastIndexOf("l");
+
+// document.write("String: "+ greeting+ "<br />")
+// document.write("Index of 'l': "+ greetingLastIndex)
+
+// ======5. Write a program to find the character at 3rd index in the word “Pakistani” and display the result in your browser.
+
+// var country = "Pakistani";
+// var countryChar = country.charAt(3);
+
+// document.write("String: "+ country+ "<br />")
+// document.write("Character at Index 3: "+ countryChar)
+
+// =======6. Repeat Q1 using string concat() method.
+
+// var firstName = prompt("Enter your first name")
+// var lastName = prompt("Enter your last name");
+
+// var fullName = firstName.concat(" ",lastName);
+
+// alert("Hello "+ fullName)
+
+// ======7. Write a program to replace the “Hyder” to “Islam” in the word “Hyderabad” and display the result in your browser.
+
+// var city = "Hyderabad";
+// city = city.replace("Hyder","Islam")
+// alert(city)
+
+// ====8. Write a program to replace all occurrences of “and” in the string with “&” and display the result in your browser. var message = “Ali and Sami are best friends. They play cricket and football together.”;
+
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+
+// message = message.replace(/and/g,"&")
+// alert(message)
+
+//===== 9. Write a program that converts a string “472” to a number 472. Display the values & types in your browser.
+
+// var num = "472"
+// document.write("Value: ",num)
+// document.write("<br />Type: ",typeof num);
+// num = Number(num);
+// document.write("<br />Value: ",num)
+// document.write("<br />Type: ",typeof num);
+
+// 10. Write a program that takes user input. Convert and show the input in capital letters.
+
+// var text = prompt("Enter your hobbies to see in capital");
+// document.write("User Input: "+text+ "<br />")
+// text = text.toUpperCase();
+// document.write("Upper case: "+text+ "<br />")
+
+// =====11. Write a program that takes user input. Convert and show the input in title case.
+
+// var text = prompt("Enter your hobbies to see in capital");
+// document.write("User Input: "+text+ "<br />")
+// var firstWord = text.slice(0,1);
+// firstWord= firstWord.toUpperCase();
+// var remainingWord = text.slice(1);
+// remainingWord= remainingWord.toLowerCase();
+// var newWord= firstWord.concat(remainingWord)
+// document.write("Capital Word: "+newWord+ "<br />")
+
+// ==== 12. Write a program that converts the variable num to string. var num = 35.36 ;Remove the dot to display “3536” display in your browser.
+
+// var num= 35.36;
+// document.write("Number: ",num+ "<br />")
+// num = num.toString();
+// num = num.replace(".","")
+// document.write("Number: ",num+ "<br />")
+
+
