@@ -220,4 +220,54 @@ document.write("The Smallest number is"+smallestNum); */
 // num = num.replace(".","")
 // document.write("Number: ",num+ "<br />")
 
+// ====13. Write a program to take user input and store usernamein a variable. If the username contains any special symbol among [@ . , !], prompt the user to enter a valid username.For character codes of [@ .
 
+// var userName = prompt("Enter your User name.");
+// for(var i=0; i < userName.length; i++){
+//     if (userName[i] == "!"||userName[i]=="," ||userName[i]=="."||userName[i]=="@" ){
+//         alert("Plese enter a valid username")
+//     }
+// }
+
+//====14. You have an array A = [cake”, “apple pie”, “cookie”, “chips”, “patties”] Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not.
+
+// var bakeryItem = ["cake","apple pie","cookie","chips", "patties"];
+// var inputSearch = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am");
+// flag= " is not Available"
+
+// for(i=0;i <bakeryItem.length;i++){
+//     if(inputSearch.toLowerCase() ==bakeryItem[i]){
+//         flag =" is Available"
+//         alert(bakeryItem[i]+flag+" at index "+i+" in our bakery")
+//     }
+// }
+// if(flag == " is not Available"){
+//     alert("We are sorry."+inputSearch+" is not available")
+// }
+
+// ====15. Write a program to take password as an input from user. The password must qualify these requirements: a. It should contain alphabets and numbers b. It should not start with a number c. It must at least 6 characters long If the password does not meet above requirements, prompt the user to enter a valid password.For character codes of a-z, A-Z & 0-9, refer to ASCII table at the end of this document.
+
+// var inputPassword = prompt("Enter your password to save.");
+// var num1 = "1234567809";
+// for (var i=0; i < inputPassword.length; i++){
+//     if(inputPassword.length >= 6){
+//         if(inputPassword[0] == num1.charAt(inputPassword[0] -1)){
+//             alert("Password cannot begin with number")
+//             break;
+//         }
+//     }else{
+//         alert("Your password must have 6 characters")
+//         break;
+//     }
+// }
+
+// 16. Write a program to convert the following string to an array using string split method. var university = “University of Karachi”; Display the elements of array in your browser.
+
+var university = "University of Karachi";
+var universityArr=[""]
+
+for(var i =0; i< university.length;i++){
+    universityArr += university[i].split(",")
+    // console.log(universityArr)
+}
+console.log(universityArr)
