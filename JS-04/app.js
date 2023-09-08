@@ -263,11 +263,28 @@ document.write("The Smallest number is"+smallestNum); */
 
 // 16. Write a program to convert the following string to an array using string split method. var university = “University of Karachi”; Display the elements of array in your browser.
 
-var university = "University of Karachi";
-var universityArr=[""]
+/*var university = "University of Karachi";
+var universityArr =[];
 
 for(var i =0; i< university.length;i++){
-    universityArr += university[i].split(",")
-    // console.log(universityArr)
+    universityArr.push(university[i]);
+    console.log(universityArr[i])
 }
-console.log(universityArr)
+document.write(universityArr+ "<br />")*/
+
+// 17. Write a program to display the last character of a user input.
+
+// var userInput = prompt("Enter any Name and i'll display last character of your input");
+// alert(userInput.charAt(userInput.length - 1)); 
+
+// 18. You have a string “The quick brown fox jumps over the lazy dog”. Write a program to count number of occurrences of word “the” in given string.
+
+// var sentence = "The quick brown fox jumps over The lazy dog";
+// var occurrences = 0;
+
+// for (i = 0; i < sentence.length; i++){
+//     if(sentence[i] == sentence.charAt("the")){
+//         occurrences += 1;
+//     }
+// }
+// document.write("There are "+ occurrences+" occurance(s) of word 'the'")
