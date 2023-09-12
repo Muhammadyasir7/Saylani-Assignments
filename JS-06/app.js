@@ -60,7 +60,16 @@ console.log(calculate())
 */
 
 // 5. Write a function that squares its argument.
-
+// function sqr(num){
+//     var sum =0;
+//     for(i=1;i<=num;i+=1){
+//         sum += i*i
+//     }
+//     document.write(sum)
+//     return sum;
+// }
+// var num = Number(prompt("Enter the for it's square"))
+// sqr(num)
 
 // 6. Write a function that computes factorial of a number.
 /*
@@ -75,3 +84,46 @@ console.log(factorialNum(9))
 */
 
 // 7. Write a function that take start and end number as inputs & display counting in your browser.
+/*
+function count(){
+    if(startNum < endNum){
+    for(var i= startNum; i <= endNum;i++){
+        document.write(i+",")
+    }}
+}
+var startNum = Number(prompt("Enter first number to start counting"));
+var endNum = Number(prompt("Enter end number to end counting"));
+count();
+*/
+
+// 8. Write a nested function that computes hypotenuse of a right angle triangle. Hypotenuse2 = Base2 + Perpendicular2
+
+// 9. Write a function that calculates the area of a rectangle.
+/*
+function areaOfRectangle(w,h){
+    var area = w*h;
+    return area
+}
+var w = 10;
+console.log(areaOfRectangle(w,5))
+*/
+
+// 10. Write a JavaScript function that checks whether a passed string is palindrome or not?
+/*
+function isPalindrome(){
+    var inputWord = "";
+    for (var i=palindromeWord.length -1;i>=0;i--){
+        inputWord += palindromeWord[i]
+    }if(palindromeWord == inputWord){
+        console.log("It is palindrome")
+    }else{
+        console.log("It is not palindrome")
+    }
+    return palindromeWord;
+}
+var palindromeWord = prompt("Check wheather it is palindrome or not");
+isPalindrome()
+
+*/
+// 11. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+
