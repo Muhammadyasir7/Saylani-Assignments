@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(Helvetica/Helvetica\ Neue\ LTW0697BlkCnObl.ttf);
+}
 body{
-    background-color: rgb(24, 22, 22);
+    background-color: #545454;
     color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .logo{
     font-size: 28px;
@@ -11,7 +16,30 @@ body{
     align-items: center;
     width: 90%;
     margin: 10px auto;
+    /* #545454 */
+
 }
-.nav-icon> i{
-    margin-left: 20px;
+.nav-icon >a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+.nav-icon>a> i{
+    margin-left: 30px;
+}
+.name-color{
+    color: orange;
+}
+.hero-main{
+    border: 1px solid yellow;
+    width: 98%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-text{
+    border: 1px solid blue;
+}
+.main-3{
+    border: 1px solid white;
 }
