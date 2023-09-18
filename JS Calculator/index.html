@@ -10,37 +10,37 @@
     <section >
         <div class="cal-main">
             <div>
-                <input type="number" value="" class="input-sec" id="input2">
+                <input type="tel" value="" class="input-sec" id="input2">
             </div>
             <div>
                 <ul class="cal-item sec-1">
-                    <li>C</li>
-                    <li>+/-</li>
-                    <li>%</li>
-                    <li class="org-color">/</li>
+                    <li onclick="emptyInput()">C</li>
+                    <li  value="CE" onclick="lastRemove()">CE</li>
+                    <li value="%" onclick="abc('%')">%</li>
+                    <li class="org-color" value="/" onclick="abc('/')">/</li>
                 </ul>
                 <ul class="cal-item">
-                    <li id="num-val" value="7" onclick="abc()">7</li>
-                    <li id="num-val2" value="8" onclick="abc()">8</li>
-                    <li id="num-val3" value="9" onclick="abc()">9</li>
-                    <li class="org-color">x</li>
+                    <li id="num-val" value="7" onclick="abc('7')">7</li>
+                    <li id="num-val2" value="8" onclick="abc('8')">8</li>
+                    <li id="num-val3" value="9" onclick="abc('9')">9</li>
+                    <li class="org-color" value="*" onclick="abc('*')">x</li>
                 </ul>
                 <ul class="cal-item">
-                    <li id="num-val4" value="4" onclick="abc()">4</li>
-                    <li id="num-val5" value="5" onclick="abc()">5</li>
-                    <li id="num-val6" value="6" onclick="abc()">6</li>
-                    <li class="org-color">-</li>
+                    <li id="num-val4" value="4" onclick="abc('4')">4</li>
+                    <li id="num-val5" value="5" onclick="abc('5')">5</li>
+                    <li id="num-val6" value="6" onclick="abc('6')">6</li>
+                    <li class="org-color" value="-" onclick="abc('-')">-</li>
                 </ul>
                 <ul class="cal-item">
-                    <li id="num-val7" value="1" onclick="abc()">1</li>
-                    <li id="num-val8" value="2" onclick="abc()">2</li>
-                    <li id="num-val9" value="3" onclick="abc()">3</li>
-                    <li class="org-color">+</li>
+                    <li id="num-val7" value="1" onclick="abc('1')">1</li>
+                    <li id="num-val8" value="2" onclick="abc('2')">2</li>
+                    <li id="num-val9" value="3" onclick="abc('3')">3</li>
+                    <li class="org-color" value="+" onclick="abc('+')">+</li>
                 </ul>
                 <ul class="cal-item">
-                    <li class="double" onclick="">C</li>
-                    <li>.</li>
-                    <li class="org-color">=</li>
+                    <li class="double" onclick="abc('0')">0</li>
+                    <li value="." onclick="abc('.')">.</li>
+                    <li class="org-color" onclick="operation()">=</li>
                 </ul>
             </div>
         </div>
