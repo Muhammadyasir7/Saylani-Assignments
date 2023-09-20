@@ -2,9 +2,11 @@ body{
     margin: 0;
     padding: 0;
 }
+.centre{
+    text-align: center;
+}
 section{
-    margin: 50px;
-    height: 80vh;
+    height: 75vh;
 }
 .cal-main{
     border: 1px solid black;

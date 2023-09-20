@@ -13,15 +13,21 @@ function operation(){
     var arr = ["+","-","*","/"]
     if(arr.indexOf(last) !== -1){
         inputField.value = inputField.value.slice(0, -1);
+        alert("Something is wrong check again.")
     }else{
         var x = document.getElementById('input2').value
         var y = eval(x);
         document.getElementById('input2').value = y
         return y
+       
     }
 }
 
-// function lastRemove(){
-//     var newField = inputField.value.lastIndexOf();
-//     newField = inputField.value
-// }
+function lastRemove(){
+    var currentValue = inputField.value;
+    if (currentValue.length > 0) {
+      // Remove the last character from the input value
+      currentValue = currentValue.slice(0, -1);
+      inputField.value = currentValue;
+}
+}
