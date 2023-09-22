@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url("images/bg-pic.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99.8vh;
+    position: relative;
+}
+.character>img{
+    position: absolute;
+    bottom: 10px;
+    height: 280px;
+}
