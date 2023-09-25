@@ -9,8 +9,14 @@ body{
     height: 99.8vh;
     position: relative;
 }
-.character>img{
+#character1{
     position: absolute;
     bottom: 10px;
     height: 280px;
+}
+#character2{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    height: 320px;
 }
