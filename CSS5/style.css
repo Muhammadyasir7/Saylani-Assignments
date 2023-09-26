@@ -3,7 +3,7 @@
     src: url(Helvetica/Helvetica\ Neue\ LTW0697BlkCnObl.ttf);
 }
 body{
-    background-color: #545454;
+    background-color: #222222;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -30,9 +30,8 @@ body{
     color: orange;
 }
 .hero-main{
-    border: 1px solid yellow;
     width: 98%;
-    height: 90vh;
+    height: 85vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -41,5 +40,41 @@ body{
     border: 1px solid blue;
 }
 .main-3{
-    border: 1px solid white;
+    display: flex;
+}
+.main-3-exp{
+    height: fit-content;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+}
+.main-nav{
+    margin-left: 50px;
+}
+.main-nav >ul{
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #444444;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+.main-nav >ul >li{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 17px 15px;
+    letter-spacing: 1px;
+}
+.main-nav >ul >li>a:default{
+    background-color: orangered;
+}
+.main-nav >ul >li:hover{
+    background-color: orangered;
 }

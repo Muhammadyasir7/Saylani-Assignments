@@ -42,8 +42,8 @@ function abc(){
     }
     if(event.keyCode === 89){
         ioriCharacter.src = 'images/iori-xi-super2.gif';
-        ioriCharacter.style.height = '300px'
-        ioriCharacter.style.width = '300px'
+        ioriCharacter.style.height = '450px'
+        ioriCharacter.style.width = '600px'
         setTimeout(function(){
             ioriCharacter.src = 'images/iori-newerkofstance.gif';
             ioriCharacter.style.height = '280px';
