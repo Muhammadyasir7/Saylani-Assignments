@@ -13,7 +13,7 @@
             <img src="images/yasir-removebg-preview.png" width="50px" class="profile-pic">
             <span>
                 <p>Muhammad Yasir</p>
-                <select>
+                <select id="share">
                     <option value="Friends">Friends</option>
                     <option value="Family">Family</option>
                     <option value="Only Me">Only Me</option>
@@ -21,17 +21,32 @@
             </span>
         </div>
         <div class="textarea-inp">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
             <div class="imgs">
-                <span><img src="images/bg-1.jfif" alt=""></span>
-                <span><img src="images/bg-2.jfif" alt=""></span>
-                <span><img src="images/bg-3.webp" alt=""></span>
-                <span><img src="images/bg-4.webp" alt=""></span>
-                <span><img src="images/bg-5.jpeg" alt=""></span>
-                <span><img src="images/bg-6.webp" alt=""></span>
+                <span><img onclick="img2(this)" src="images/bg-1.jfif" alt=""></span>
+                <span><img onclick="img2(this)" src="images/bg-2.jfif" alt=""></span>
+                <span><img onclick="img2(this)" src="images/bg-3.webp" alt=""></span>
+                <span><img onclick="img2(this)" src="images/bg-4.webp" alt="" ></span>
+                <span><img onclick="img2(this)" src="images/bg-5.jpeg" alt="" ></span>
+                <span><img onclick="img2(this)" src="images/bg-6.webp" alt=""></span>
+                <span><img onclick="img2(this)" src="images/bg-7.jpeg" alt=""></span>
+
             </div>
         </div>
-        <button>Post</button>
+        <button onclick="post()">Post</button>
+    </div>
+    <div class="main main2" id="main2">
+        <h1>Your post</h1> <hr>
+        <div class="main-profile">
+            <img src="images/yasir-removebg-preview.png" width="50px" class="profile-pic">
+            <span>
+                <p>Muhammad Yasir</p>
+                <p id="shared-with"></p>
+            </span>
+        </div>
+        <div class="textarea-inp" id="text-sec">
+        </div>
+        <button>Return</button>
     </div>
     <script src="index.js"></script>
 </body>
