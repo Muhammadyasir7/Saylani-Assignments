@@ -49,4 +49,5 @@ button{
 }
 .textarea-inp{
     min-height: 30vh;
+    background-color: rgb(235, 234, 233);
 }
