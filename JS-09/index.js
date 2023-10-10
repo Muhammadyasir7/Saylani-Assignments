@@ -1,15 +1,16 @@
+var backImg;
 
-function img2(e){
-    var imageUrl = e.src
-    console.log(imageUrl)
-    return imageUrl;
+function img2(src){
+    backImg = src;
+    var text = document.getElementById('text')
+    text.style.backgroundImage = 'url(' + backImg + ')'
 }
 
 function post(){
     var sharedWith = document.getElementById('share').value;
     var text = document.getElementById('text').value;
     if(text === ""){
-        swal("Oops...", "Something went wrong!", "Write something here");
+        sweetAlert("Oops...", "Something went wrong!", "error");
     }
     else{
     document.getElementById('main2').style.display ="block";
@@ -17,7 +18,7 @@ function post(){
     document.getElementById('text-sec').innerHTML = text;
 
     var textDiv = document.getElementById('text-sec');
-    // textDiv.style.backgroundImage = url(selectedImageUrl);
+    textDiv.style.backgroundImage= 'url(' + backImg + ')'
     textDiv.style.backgroundRepeat = 'no-repeat';
     textDiv.style.backgroundSize = 'cover';
 ;
@@ -26,18 +27,7 @@ function post(){
 function returnBtn(){
     var returnId = document.getElementById('retrn')
     var noneBtn = document.getElementById('main2').style.display ="none";
-    swal({
-        title: "Are you sure?",
-        text: "You will not be able to recover this imaginary file!",
-        type: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#DD6B55",
-        confirmButtonText: "Yes, delete it!",
-        closeOnConfirm: false
-      },
-      function(){
-        swal("Deleted!", "Your imaginary file has been deleted.", "success");
-      });
+    swal("Done!", "Deleted Successfully!", "success")
     document.getElementById('text').value = ""
     return noneBtn
 }
