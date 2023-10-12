@@ -45,10 +45,9 @@ button{
 }
 .textarea-inp{
     min-height: 30vh;
-    background-color: rgb(235, 234, 233);
 }
 .text-color-div{
-    width: 30%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
@@ -58,4 +57,17 @@ button{
 #text-col{
     height: 30px;
     width: 30px;
+}
+@media only screen and (max-width: 400px) {
+    .main{
+        width: auto;
+    }
+    .imgs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #text-sec{
+        word-wrap: break-word;
+        width: 99%;
+    }
 }

@@ -16,8 +16,8 @@ function textCol(){
 function post(){
     var sharedWith = document.getElementById('share').value;
     var text = document.getElementById('text');
-    if(text.value === ""){
-        sweetAlert("Oops...", "Something went wrong!", "error");
+    if(text.value.trim() === ""){
+        sweetAlert("Oops...", "Please write something!", "error");
     }
     else{
         var main3 = document.getElementById('main3')
@@ -31,20 +31,17 @@ function post(){
                 <p id="shared-with">${sharedWith}</p>
             </span>
         </div>
-        <div class="textarea-inp" id="text-sec" style="background-image: url(${backImg});background-size:cover;background-repeat:no-repeat;color:${textColor}">${text.value}
+        <div class="textarea-inp" id="text-sec" style="background-color: rgb(235, 234, 233);background-image: url(${backImg});background-size:cover;background-repeat:no-repeat;color:${textColor}">${text.value}
         </div>
         <button onclick="returnBtn()" id="retrn">Delete this Post</button>
     </div>
     `
     text.value = ""
-    document.getElementById('text').style.background = "none"
+    document.getElementById('text').style.background = "rgb(235, 234, 233)"
 }
 }
 
 function returnBtn(){
-    var returnId = document.getElementById('retrn')
-    var noneBtn = document.getElementById('main2').style.display ="none";
+    var noneBtn = document.getElementById('main1').remove();
     swal("Done!", "Deleted Successfully!", "success")
-    document.getElementById('text').value = ""
-    return noneBtn
 }
