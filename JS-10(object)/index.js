@@ -1,5 +1,14 @@
 var mobiles= {
     apple:{
+        iPhone_14_Pro_Max:{
+            name: "iPhone 14 Pro Max",
+            memory: "256/512/1024 GB",
+            camera: "48MP Quad Pro Camera",
+            cpu: "A16 Bionic",
+            battery: "4,323mAh",
+            price: "Starting at 1199 USD",
+            image : "https://images.priceoye.pk/apple-iphone-14-pro-max-pakistan-priceoye-4hr9p.jpg"
+        },
         iPhone_13_Pro:{
             name: "iPhone 13 Pro",
             memory: "128/256/512 GB",
@@ -83,6 +92,7 @@ var mobiles= {
             cpu: "Exynos 990 (International) / Qualcomm Snapdragon 865+ (USA)",
             battery: "4,500mAh",
             price: "Starting at 1,299 USD",
+            image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-62683/samsung-galaxy-note20-ultra-5g-1-1-1024x768.jpg"
         },
         Samsung_Galaxy_A52:{
             name: "Samsung Galaxy A52",
@@ -91,6 +101,7 @@ var mobiles= {
             cpu: "octa-core",
             battery: "4,500mAh",
             price: "Starting at 349 USD",
+            image: "https://shopingrite.b-cdn.net/wp-content/uploads/2022/06/samsung-galaxy-a52.jpg"
         },
         Samsung_Galaxy_ZFlip3:{
             name: "Samsung Galaxy Z Flip 3",
@@ -99,6 +110,7 @@ var mobiles= {
             cpu: "Snapdragon 888",
             battery: "3,300mAh",
             price: "Starting at 999 USD",
+            image: "https://images.priceoye.pk/samsung-galaxy-z-flip3-5g-pakistan-priceoye-jquy0.jpg"
         },
         Samsung_Galaxy_A12:{
             name: "Samsung Galaxy A12",
@@ -107,6 +119,7 @@ var mobiles= {
             cpu: "octa-core",
             battery: "5,000mAh",
             price: "Starting at 179 USD",
+            image: "https://appleman.pk/cdn/shop/products/Samsung-A12-3_1024x.jpg?v=1667807175"
         }
     },
     vivo:{
@@ -117,6 +130,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 870",
             battery: "4,200mAh",
             price: "Starting at 699 USD",
+            image: "https://whatphone.pk/wp-content/uploads/2022/01/vivo-x60-pro-plus.jpg"
         },
         Vivo_V21:{
             name: "Vivo V21",
@@ -125,6 +139,7 @@ var mobiles= {
             cpu: "MediaTek Dimensity 800U",
             battery: "4,000mAh",
             price: "Starting at 299 USD",
+            image: "https://mobilekiprice.pk/wp-content/uploads/2021/06/Vivo-V21-featured-image.jpg"
         },
         Vivo_Y20:{
             name: "Vivo Y20",
@@ -133,6 +148,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 460",
             battery: "5,000mAh",
             price: "Starting at 179 USD",
+            image: "https://clickmobile.pk/wp-content/uploads/2021/05/vivo-y20.png"
         },
         Vivo_S1_Pro:{
             name: "Vivo S1 Pro",
@@ -141,6 +157,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 665",
             battery: "4,500mAh",
             price: "Starting at 299 USD",
+            image: "https://www.mega.pk/items_images/Vivo+S1+Pro+8GB+RAM+128GB+Storage+Price+in+Pakistan%2C+Specifications%2C+Features_-_19733.webp"
         },
         Vivo_V15_Pro:{
             name: "Vivo V15 Pro",
@@ -149,6 +166,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 675",
             battery: "3,700mAh",
             price: "Starting at 349 USD",
+            image: "https://mobiles.dailypakistan.com.pk/wp-content/uploads/2020/09/FI-copy-1-600x600.jpg",
         }
     },
     oppo: {
@@ -159,6 +177,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 888",
             battery: "4,500mAh",
             price: "Starting at 1,099 USD",
+            image: "https://propakistani.pk/price/wp-content/uploads/2021/03/Oppo-Find-X3-Pro-price.png"
         },
         Oppo_Reno_5_Pro:{
             name: "Oppo Reno 5 Pro",
@@ -167,6 +186,7 @@ var mobiles= {
             cpu: "MediaTek Dimensity 1000+",
             battery: "4,350mAh",
             price: "Starting at 549 USD",
+            image: "https://myshop.pk/pub/media/catalog/product/cache/26f8091d81cea4b38d820a1d1a4f62be/o/p/oppo_reno_5_pro_myshop-pk-3_1_1.jpg"
         },
         Oppo_A74:{
             name: "Oppo A74",
@@ -175,6 +195,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 662",
             battery: "5,000mAh",
             price: "Starting at 299 USD",
+            image: "https://i0.wp.com/mobilemall.com.pk/wp-content/uploads/2022/07/Oppo-A74-price-in-Pakistan.jpg?fit=325%2C392&ssl=1"
         },
         Oppo_F19_Pro:{
             name: "Oppo F19 Pro",
@@ -183,6 +204,7 @@ var mobiles= {
             cpu: "MediaTek Helio P95",
             battery: "4,310mAh",
             price: "Starting at 349 USD",
+            image: "https://www.purchase.com.pk/wp-content/uploads/2021/12/oppo-f19-pro.jpg"
         },
         Oppo_A53:{
             name: "Oppo A53",
@@ -191,6 +213,7 @@ var mobiles= {
             cpu: "Qualcomm Snapdragon 460",
             battery: "5,000mAh",
             price: "Starting at 199 USD",
+            image: "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a53/navigation/A53-navigation-blue-v2.png"
         },                                        
     }
 }
@@ -209,9 +232,9 @@ for(var key in mobiles){
     `
     for(var key1 in mobiles[key]){
         allMobiles.innerHTML += `
-        <div class="col mt-4">
+        <div class="col mt-3">
         <div class="card" style="width: 19.5rem;">
-        <img src="${mobiles[key][key1].image}" class="card-img-top" style="width:310px; height:250px" alt="...">
+        <img src="${mobiles[key][key1].image}" class="card-img-top card-wid" alt="mobile-pic">
         <div class="card-body">
           <h5 class="card-title">${mobiles[key][key1].name}</h5>
           <p class="card-text">${mobiles[key][key1].memory}</p>
@@ -227,7 +250,7 @@ for(var key in mobiles){
 
 function mobItem(){
     model.innerHTML = "";
-    model.innerHTML = "<option disabled>Select option</option>";
+    model.innerHTML = "<option>Select option</option>";
 
     for(var key1 in mobiles[company.value]){
     model.innerHTML +=`
@@ -236,5 +259,20 @@ function mobItem(){
 }
 
 function searchResult(){
-    console.log(mobiles[company.value][model.value])
+    var mobileData = mobiles[company.value][model.value]
+    allMobiles.innerHTML = `
+    <div class="col mt-3">
+    <div class="card" style="width: 19.5rem;">
+    <img src="${mobileData.image}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${mobileData.name}</h5>
+      <p class="card-text">Memory: ${mobileData.memory}</p>
+      <p class="card-text">Battery: ${mobileData.battery}</p>
+      <p class="card-text">CPU: ${mobileData.cpu}</p>
+      <p class="card-text">Camera: ${mobileData.camera}</p>
+      <h6>Price: ${mobileData.price}</h6>
+    </div>
+        </div>
+    </div>
+    `
 }
