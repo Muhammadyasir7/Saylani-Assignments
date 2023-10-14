@@ -7,6 +7,7 @@ var mobiles= {
             cpu: "A15 Bionic",
             battery: "3,240mAh",
             price: "Starting at 999 USD",
+            image : "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_inline.jpg.large.jpg"
         },
         iPhone_13_Mini:{
             name: "iPhone 13 Mini",
@@ -15,6 +16,7 @@ var mobiles= {
             cpu: "A15 Bionic",
             battery: "2,438mAh",
             price: "Starting at 699 USD",
+            image: "https://www.pakmobizone.pk/wp-content/uploads/2021/10/Apple-iPhone-13-mini-Pink-2.png",
         },
         iPhone_12_Pro_Max:{
             name: "iPhone 12 Pro Max",
@@ -23,10 +25,17 @@ var mobiles= {
             cpu: "A14 Bionic",
             battery: "3,687mAh",
             price: "Starting at 1,099 USD",
+            image: "https://regen.pk/cdn/shop/products/iphone-12-pro-max-434446_4dfc3a2e-5733-4d7d-9b74-ed358291a953.jpg?v=1674906982"
         },        
         iphone11:{
             name: "iphone11",
-            
+            memory: "64/128/256 GB",
+            camera: "12 MP, f/1.8",
+            price: "Starting at 1,099 USD",
+            cpu: "A13 Bionic",
+            battery: "3110 mAh",
+            price: "Starting at 268 USD",
+            image: "https://appleman.pk/cdn/shop/products/iPhone-11-1_086be1d4-8f62-46b9-89d2-76be66dce6bd.jpg?v=1667315355",
         },
         iPhone_SE_2nd_Gen:{
             name: "iPhone SE (2nd Gen)",
@@ -35,6 +44,7 @@ var mobiles= {
             cpu: "A13 Bionic",
             battery: "1,821mAh",
             price: "Starting at 399 USD",
+            image: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.large.jpg"
         },
 
     },
@@ -46,7 +56,7 @@ var mobiles= {
             cpu: "octa-core",
             battery: "440mAh",
             price: "599,999Rs",
-            img : "images/SamsungGalaxyZFold5-b.jpg"
+            image : "https://www.pakmobizone.pk/wp-content/uploads/2023/08/Samsung-Galaxy-Z-Flip-5-Icy-Blue-1.jpg"
         },
         Samsung_Galaxy_S22_Ultra:{
             name: "Samsung Galaxy S22 Ultra",
@@ -55,6 +65,7 @@ var mobiles= {
             cpu: "Exynos 2200 (International) / Qualcomm Snapdragon 8 Gen 2 (USA)",
             battery: "5,000mAh",
             price: "Starting at 1,199 USD",
+            image: "https://stall.pk/wp-content/uploads/2022/02/samsung-galaxy-s22-ultra_price-in-pakistan-stall.pk_.jpeg.webp"
         },
         Samsung_Galaxy_S22:{
             name: "Samsung Galaxy S22",
@@ -63,6 +74,7 @@ var mobiles= {
             cpu: "octa-core",
             battery: "4,000mAh",
             price: "Starting at 799 USD",
+            image: "https://fdn.gsmarena.com/imgroot/news/22/02/samsung-galaxy-s22-hot-take/inline/-1200w5/gsmarena_003.jpg",
         },
         Samsung_Galaxy_Note20_Ultra:{
             name: "Samsung Galaxy Note 20 Ultra",
@@ -185,6 +197,7 @@ var mobiles= {
 
 var company = document.getElementById('company');
 var model = document.getElementById('model');
+var allMobiles= document.getElementById('allMobiles')
 
 company.innerHTML = "<option>Select option</option>";
 model.innerHTML = "<option>Select option</option>"
@@ -194,14 +207,34 @@ for(var key in mobiles){
     company.innerHTML +=`
     <option value="${key}">${key.toUpperCase()}</option>
     `
+    for(var key1 in mobiles[key]){
+        allMobiles.innerHTML += `
+        <div class="col mt-4">
+        <div class="card" style="width: 19.5rem;">
+        <img src="${mobiles[key][key1].image}" class="card-img-top" style="width:310px; height:250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${mobiles[key][key1].name}</h5>
+          <p class="card-text">${mobiles[key][key1].memory}</p>
+          <p class="card-text">${mobiles[key][key1].battery}</p>
+          <h6>${mobiles[key][key1].price}</h6>
+          <a href="#" class="btn btn-primary">Go to mobile</a>
+        </div>
+      </div>
+      </div>
+        `
+    }
 }
 
 function mobItem(){
     model.innerHTML = "";
-    model.innerHTML = "<option>Select option</option>";
+    model.innerHTML = "<option disabled>Select option</option>";
 
     for(var key1 in mobiles[company.value]){
     model.innerHTML +=`
     <option value="${key1}">${key1.toUpperCase()}</option>
     `}
+}
+
+function searchResult(){
+    console.log(mobiles[company.value][model.value])
 }
