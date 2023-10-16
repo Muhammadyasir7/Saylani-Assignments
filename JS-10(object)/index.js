@@ -240,7 +240,7 @@ for(var key in mobiles){
           <p class="card-text">${mobiles[key][key1].memory}</p>
           <p class="card-text">${mobiles[key][key1].battery}</p>
           <h6>${mobiles[key][key1].price}</h6>
-          <a href="#" class="btn btn-primary">Go to mobile</a>
+          <a href="#" class="btn btn-primary" id="btn" onclick="btnMobile()">Go to mobile</a>
         </div>
       </div>
       </div>
@@ -258,7 +258,7 @@ function mobItem(){
     `}
 }
 
-function searchResult(){
+function searchResult(){    
     var mobileData = mobiles[company.value][model.value]
     allMobiles.innerHTML = `
     <div class="col mt-3">
