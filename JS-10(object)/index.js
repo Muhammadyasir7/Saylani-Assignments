@@ -222,8 +222,8 @@ var company = document.getElementById('company');
 var model = document.getElementById('model');
 var allMobiles= document.getElementById('allMobiles')
 
-company.innerHTML = "<option>Select option</option>";
-model.innerHTML = "<option>Select option</option>"
+company.innerHTML = "<option>Mobile Brand</option>";
+model.innerHTML = "<option>Model</option>"
 
 
 for(var key in mobiles){
@@ -271,6 +271,7 @@ function searchResult(){
       <p class="card-text">CPU: ${mobileData.cpu}</p>
       <p class="card-text">Camera: ${mobileData.camera}</p>
       <h6>Price: ${mobileData.price}</h6>
+      <a href="/index.html" class="btn btn-primary" id="btn">Go back</a>
     </div>
         </div>
     </div>
