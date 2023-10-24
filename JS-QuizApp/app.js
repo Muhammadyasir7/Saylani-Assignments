@@ -1,13 +1,41 @@
 var login= document.getElementById('login-btn');
 var userName = "admin";
 var passWord = "admin";
-var optionSelect;
 var index = 0;
+var scrore = 0;
+
+function loginPage(){
+    var userInput = document.getElementById('userInput').value
+    var userPass = document.getElementById('userPass').value
+
+    if(userName === userInput.trim() && passWord === userPass.trim()){
+    Swal.fire(
+        'Done!',
+        'Login Successfully',
+        'success'
+    )
+    
+    var main= document.getElementById('main2');
+    main.style.display = "none";
+    var fistDiv = document.getElementById('firstDiv');
+    fistDiv.style.display = "block";
+    }
+    else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'User Name or password is wrong!',
+          })
+          
+    }
+}
+
 
 function showPass(){
   Swal.fire('Username : admin',
   'Password : admin')
 }
+
 var arrObj = [
     {
         question: "Which of the following selector matches all elements of a type?",
@@ -34,7 +62,7 @@ var arrObj = [
         answer: "mm"
     },
     {
-        question: "Which of the following property is used to control the scrolling of an image in the background?",
+        question: "Which of the following is correct about RGB Values format of CSS colors?",
         option1: "This color value is specified using the rgb( ) property.",
         option2: "This property takes three values, one each for red, green, and blue.",
         option3: "The value can be an integer between 0 and 255 or a percentage.",
@@ -57,66 +85,91 @@ var arrObj = [
         option4: "text-transform",
         answer: "text-decoration"
     },
+    {
+        question: "Which of the following property specifies the right margin of an element?",
+        option1: "margin-right",
+        option2: "margin-bottom",
+        option3: "margin-top",
+        option4: "margin-left",
+        answer: "margin-right"
+    },
+    {
+        question: "Which of the following property of a anchor element signifies an element that currently has the user's mouse pointer hovering over it?",
+        option1: ":link",
+        option2: ":active",
+        option3: ":visited",
+        option4: ":hover",
+        answer: ":hover"
+    },
+    {
+        question: "Which of the following property of a table element specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style?",
+        option1: "border-collapse",
+        option2: "caption-side",
+        option3: "border-spacing",
+        option4: "empty-cells",
+        answer: "border-collapse"
+    },
+    {
+        question: "Which of the following property changes the width of top border?",
+        option1: "border-bottom-width",
+        option2: "border-top-width",
+        option3: "border-left-width",
+        option4: "border-right-width",
+        answer: "border-top-width"
+    },
 ]
-function optSelect(e){
-    optionSelect = e.value
+
+function testStart(){
+    var fistDiv = document.getElementById('firstDiv');
+    fistDiv.style.display = "none";
+    var nextDiv = document.getElementById('nextDiv');
+    nextDiv.style.display = "block";
+    renderPage()
 }
+
 function renderPage(){
-    
-    var testPage = document.getElementById('testPage')
+    var testPage = document.getElementById('testPage');
+    testPage.style.display = "block";
+    var options = document.getElementsByName('option')
+
     testPage.innerHTML =`
     <div class="div-main">
-    <nav class="navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand">MCQ Quiz</a>
-        <p id="timer"></p>
-    </nav> <hr>
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand">MCQ Quiz</a>
+            <p id="timer"></p>
+        </nav> <hr>
     <div>
-        <h5><span>Q.</span>${arrObj[0].question}</h5>
+        <h5><span>Q.${index +1} </span>${arrObj[index].question}</h5>
         <div class="options">
-            <option class="animate__animated animate__pulse" onclick="optSelect(this)" value="${arrObj[index].option1}">${arrObj[index].option1}</option>
-            <option onclick="optSelect(this)" value="${arrObj[index].option2}">${arrObj[index].option2}</option>
-            <option onclick="optSelect(this)" value="${arrObj[index].option3}">${arrObj[index].option3}</option>
-            <option onclick="optSelect(this)" value="${arrObj[index].option4}">${arrObj[index].option4}</option>
+            <div >
+                <label class="input-rad" for=""><input type="radio" class="input-radio" name="option" value="${arrObj[index].option1}" id="">${arrObj[index].option1}</label>
+            </div>
+            <div >
+                <label class="input-rad" for=""><input type="radio" class="input-radio" name="option" value="${arrObj[index].option2}" id="">${arrObj[index].option2}</label>
+            </div>
+            <div >
+                <label class="input-rad" for=""><input type="radio" class="input-radio" name="option" value="${arrObj[index].option3}" id="">${arrObj[index].option3}</label>
+            </div>    
+            <div >
+                <label class="input-rad" for=""><input type="radio" class="input-radio" name="option" value="${arrObj[index].option4}" id="">${arrObj[index].option4}</label>
+            </div>
+           
+            <hr>
         </div>
     </div>
-    <hr>
-    <div class="next-div"><button onclick="changeQs()" class="next">Next</button></div>
-</div>
-
+    </div>
     `
+    for(var i =0; i < options.length; i++){
+        if(options[i].checked){
+            if(options[i].value == arrObj[index -1].answer){
+                scrore++;
+            }
+        }
+    }
     index++;
 }
 
-function loginPage(){
-    var userInput = document.getElementById('userInput').value
-    var userPass = document.getElementById('userPass').value
 
-    if(userName === userInput.trim() && passWord === userPass.trim()){
-    Swal.fire(
-        'Done!',
-        'Login Successfully',
-        'success'
-    )
-    
-    var main= document.getElementById('main2');
-    main.style.display = "none";
-    renderPage()
-    }
-    else{
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'User Name or password is wrong!',
-          })
-          
-    }
-}
-
-
-
-function changeQs(){
-    console.log(index)
-}
 
 // var sec= 10;
 // var min = 1;

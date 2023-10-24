@@ -29,7 +29,7 @@ body{
     justify-content: space-between;
     padding: 50px;
 }
-input{
+.input{
     width: 90%;
     border: none;
 }
@@ -85,6 +85,29 @@ h1{
 }
 
 /* login page CSS Ends here */
+.first-div{
+    margin: 100px auto;
+    padding: 30px;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    display: none;
+}
+.first-div > button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-image: url(images/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
 body{
     background-color: #f1eeee;
 }
@@ -116,10 +139,20 @@ body{
     color: #666666;
 }
 .next-div{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    position: absolute;
+    right: 60px;
+    top: 400px;
+    display: none;
 }
 .options >option:hover{
     background-color: #f8f8f8;
+    font-size: large;
+}
+.input-radio{
+    margin: 12px;
+}
+.input-rad{
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
