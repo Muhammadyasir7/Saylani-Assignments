@@ -22,23 +22,17 @@ body{
     margin: 5px 15px 5px 15px;
     background-color: #fff;
     border-radius: 10px;
-    width: 450px;
+    width: 700px;
     height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px;
+    padding: 30px;
 }
-.input{
-    width: 90%;
-    border: none;
+.goto-login{
+    text-align: center;
 }
-input:focus{
-    outline: none;
-}
-.icons{
-    margin-right: 10px;
-}
+
 h1{
     text-align: center;
     font-weight: 800;
@@ -58,17 +52,18 @@ h1{
     color: #fff;
 }
 
-.forgot{
-    font-size: small;
-    text-align: right;
-    margin-top: 0px !important;
-}
-.forgot >a {
-    text-decoration: none;
-    color: #666666;
-}
 .links-div{
+    margin: 0 auto;
     text-align: center;
+}
+.links-text{
+    margin-bottom: 30px;
+}
+.icon-item >i{
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: larger;
+    color: #fff; 
 }
 
 /* login page CSS Ends here */
