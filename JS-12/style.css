@@ -72,3 +72,58 @@ h1{
 }
 
 /* login page CSS Ends here */
+.navbar{
+    display: flex !important;
+    justify-content: space-around;
+}
+#show{
+    /* height: 90vh; */
+    margin-top: 70px;
+}
+.card{
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 80vh;
+    padding: 0 !important;
+}
+.card >img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+#input-img{
+    display: none;
+}
+.choose{
+    border: 1px solid crimson;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: #fff;
+}
+#logOut{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: crimson;
+    border-radius: 10px;
+    border: 1px solid crimson;
+}
+#logOut:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+/* Post Sec */
+.post-sec{
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+}
+.post-side1{
+    width: 30%;
+}

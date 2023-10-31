@@ -67,6 +67,7 @@ function saveDetail(){
             userPhoneNum: phoneNum,
             userPass: loginPass,
             userConfirmPass: confirmPass,
+            imgSrc : ""
         }
         sendData += localStorage.setItem("userData",JSON.stringify(userData))
         // JSON.parse(localStorage.getItem("userData"))
@@ -114,3 +115,66 @@ function loginPage(){
         },2000)
     }
 }
+
+
+function blog(){
+    document.getElementById("show").style.display = "none";
+}
+
+
+function showDetails(){
+    var getUserInfo = JSON.parse(localStorage.getItem("userData"));
+    var show= document.getElementById("show");
+    document.getElementById("show").style.display = "block";
+
+    show.innerHTML =`
+    <div class="card">
+    <h3>Profile</h3>
+        <img class="card-img-top" src="images/blank-profile-picture-973460_960_720.webp" id="profileId" alt="Profile image cap">
+        <label for="input-img" class="choose">Choose Pic</label>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-img">
+        <hr/>
+        <div class="card-body">
+          <h5 class="card-title">Name : ${getUserInfo.userName}</h5>
+          <h5 class="card-title">Email : ${getUserInfo.userEmail}</h5>
+          <h5 class="card-title">Contact No : ${getUserInfo.userPhoneNum}</h5>
+          <h5 class="card-title">Email : ${getUserInfo.userEmail}</h5>
+        </div>
+    </div>
+    `
+}
+
+
+var profilePic = document.getElementById("profileId")
+var inputImg  = document.getElementById("input-img")
+var profilePic;
+// inputImg.onchange = function(){
+//     // console.log(profilePic.src)
+//     profilePic = profilePic.src =URL.createObjectURL(inputImg.files[0])
+//     // console.log(profilePic)
+//     // sendData += localStorage.setItem("userData",JSON.stringify(userData))
+    
+// }
+function logOut(){
+    window.location.href = "./index.html"
+}
+
+let toolbaroptions = [
+    ["bold","italic","underline","strike"],
+    [{header:[1,2,3,4,5,6,false]}],
+    [{list: "ordered"},{list: "bullet"}],
+    [{script: "sub"},{script:"super"}],
+    [{indent: "+1"},{indent: "-1"}],
+    [{align:[]}],
+    [{size:["small","large","huge",false]}],
+    ["image","link", "video","formula"],
+    [{color:[]},{background:[]}],
+    [{font:[]}],
+    ["code-block","blockquote"]
+]
+let quill = new Quill('#editor',{
+    modules:{
+        toolbar: toolbaroptions,
+    },
+    theme: "snow"
+})
