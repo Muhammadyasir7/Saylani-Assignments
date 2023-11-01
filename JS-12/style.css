@@ -119,11 +119,21 @@ h1{
 }
 
 /* Post Sec */
-.post-sec{
-    border: 1px solid black;
-    display: flex;
-    width: 100%;
+.ql-toolbar{
+    width: 50%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 70px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
-.post-side1{
-    width: 30%;
+#editor{
+    width: 50%;
+    margin:  auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.ql-editor{
+    height: 400px;
+
 }

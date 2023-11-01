@@ -60,7 +60,8 @@ function saveDetail(){
             showConfirmButton: false,
             timer: 1500
           })
-        
+        userData = userData.push(userValue)
+        var userData = []
         var userData = {
             userName: firstName.trim()+" "+lastName.trim(),
             userEmail: email.trim(),
@@ -69,7 +70,7 @@ function saveDetail(){
             userConfirmPass: confirmPass,
             imgSrc : ""
         }
-        sendData += localStorage.setItem("userData",JSON.stringify(userData))
+        sendData = localStorage.setItem("userData",JSON.stringify(userData))
         // JSON.parse(localStorage.getItem("userData"))
         // if(getUserInfo === sendData){
         //     alert("You are already registered")
@@ -117,15 +118,13 @@ function loginPage(){
 }
 
 
-function blog(){
-    document.getElementById("show").style.display = "none";
-}
-
 
 function showDetails(){
     var getUserInfo = JSON.parse(localStorage.getItem("userData"));
     var show= document.getElementById("show");
     document.getElementById("show").style.display = "block";
+    document.querySelector(".ql-toolbar").style.display= "none";
+    document.getElementById("editor").style.display = "none"
 
     show.innerHTML =`
     <div class="card">
@@ -142,6 +141,12 @@ function showDetails(){
         </div>
     </div>
     `
+}
+
+function blog(){
+    document.getElementById("show").style.display = "none";
+    document.querySelector(".ql-toolbar").style.display= "block";
+    document.getElementById("editor").style.display = "block"
 }
 
 
@@ -176,5 +181,6 @@ let quill = new Quill('#editor',{
     modules:{
         toolbar: toolbaroptions,
     },
-    theme: "snow"
+    theme: "snow",
+    placeholder: "Write your thoughts here"
 })
