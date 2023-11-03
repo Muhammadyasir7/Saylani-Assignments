@@ -2,7 +2,7 @@ var login= document.getElementById('login-btn');
 var userName = "admin";
 var passWord = "admin";
 var index = 0;
-var scrore = 0;
+var score = 0;
 
 function loginPage(){
     var userInput = document.getElementById('userInput').value
@@ -132,6 +132,33 @@ function renderPage(){
     testPage.style.display = "block";
     var options = document.getElementsByName('option')
 
+    for(var i =0; i < options.length; i++){
+        if(options[i].checked){
+            if(options[i].value == arrObj[index -1].answer){
+                score++;
+            }
+        }
+    }
+    if(!arrObj[index]){
+        testPage.innerHTML =`
+            <div class="div-main">
+                <nav class="navbar navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand">MCQ Quiz</a>
+                    <p id="timer"></p>
+                </nav> <hr>
+                <div>
+                    <h1>Your Score: ${score} </h1>
+                    <hr>
+                </div>
+            </div>
+            `
+        document.querySelector(".next").style.display="none";
+        nextDiv.innerHTML = `
+        <button onclick="backPage()" class="back">Go Back</button>
+        `
+        return
+    }
+
     testPage.innerHTML =`
     <div class="div-main">
         <nav class="navbar navbar-light bg-light justify-content-between">
@@ -159,22 +186,14 @@ function renderPage(){
     </div>
     </div>
     `
-    for(var i =0; i < options.length; i++){
-        if(options[i].checked){
-            if(options[i].value == arrObj[index -1].answer){
-                scrore++;
-                console.log(scrore)
-            }
-        }
-    }
-    if(arrObj.length){
-        index++;
-    }else{
-        alert("ends")
-    }
+        index++
 }
 
-
+function backPage(){
+    loginPage()
+    var testPage = document.getElementById("testPage")
+    testPage.style.display = "none"
+}
 
 // var sec= 10;
 // var min = 1;

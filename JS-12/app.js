@@ -60,8 +60,7 @@ function saveDetail(){
             showConfirmButton: false,
             timer: 1500
           })
-        userData = userData.push(userValue)
-        var userData = []
+        // var userData = []
         var userData = {
             userName: firstName.trim()+" "+lastName.trim(),
             userEmail: email.trim(),
@@ -184,3 +183,11 @@ let quill = new Quill('#editor',{
     theme: "snow",
     placeholder: "Write your thoughts here"
 })
+
+function postData(){
+    console.log(quill.root.innerHTML)
+    var postSec = document.getElementById("post-sec");
+    postSec.innerHTML += quill.root.innerHTML
+    
+    document.querySelector('.ql-editor').innerHTML = ""
+}
