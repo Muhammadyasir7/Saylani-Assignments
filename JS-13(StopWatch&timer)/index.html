@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <div></div>
+    <section class="main">
+        <div class="head">
+            <div><i class="fa-regular fa-hourglass"></i><a onclick="timers()" href="javascript:void(0)">TIMER</a></div>
+            <div><i class="fa-solid fa-stopwatch"></i><a href="javascript:void(0)" id="stopwatch">STOPWATCH</a></div>
+        </div>
+        <div id="mainDiv">
+            <span class="num" id="hourss">0</span>
+            <span>H</span>
+            <span class="num" id="min">0</span>
+            <span>M</span>
+
+        </div>
+        <div class="head bottom">
+            <button onclick="start()" id="startBtn">START</button>
+            <button onclick="stop()">STOP</button>
+            <button onclick="reset()">RESET</button>
+        </div>
     </section>
+
+    <script src="https://kit.fontawesome.com/0151bb5b76.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
