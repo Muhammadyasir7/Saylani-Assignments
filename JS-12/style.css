@@ -128,6 +128,11 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
+.editor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #editor{
     width: 50%;
     margin:  auto;
@@ -136,4 +141,22 @@ h1{
 .ql-editor{
     height: 400px;
 
+}
+
+.btn-post{
+    color: #fff;
+    background-color: crimson;
+    border: 1px solid crimson;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    display: inline;
+    margin-top: 10px;
+
+}
+#post-sec{
+    width: 50%;
+    height: 400px;
+    margin: 30px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
