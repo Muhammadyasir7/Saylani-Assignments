@@ -54,11 +54,50 @@ body{
     background: linear-gradient(to right,#13ADC7,#6978D1,#945DD6);
     color: #fff;
 }
-
+/* About Section */
 .about{
     height: 99vh;
 }
+.about>h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-main{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-img{
+    border-radius: 10px;
+}
+.about-text{
+    width: 55%;
+}
 
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right,#13ADC7,#6978D1,#945DD6);
+}
+.links-block{
+    display: flex;
+    margin-top: 80px;
+    padding: 0px;
+}
+.social-item{
+    list-style: none;
+}
+.social-item >a{
+    padding: 15px;
+}
+.social-item >a >img{
+    width: 50px;
+    height: 50px;
+}
 /* Media Query */
 @media only screen and (max-width: 991px) {
     .nav-list{
