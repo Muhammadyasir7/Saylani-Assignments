@@ -56,7 +56,7 @@ body{
 }
 /* About Section */
 .about{
-    height: 99vh;
+    height: 100dvh;
 }
 .about>h1{
     text-align: center;
@@ -75,9 +75,51 @@ body{
 .about-text{
     width: 55%;
 }
+/* Skills Section Starts here */
+#skills{
+    height: 100dvh;
+}
 
+/* Project Section Starts here */
+#project{
+    margin-bottom: 20px;
+}
+#project >h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.project-main{
+    width: 98%;
+    margin: 0 auto;
+}
+.card-img-top{
+    height: 200px;
+}
+.card-body{
+    color: #0f1624;
+}
+
+/* Contact Section Starts Here */
+.contact-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    margin: 0 auto;
+}
+
+#contact >h1{
+    text-align: center;
+}
+.form-control{
+    color: white !important;
+}
+label{
+    color: #fff !important;
+}
+/* Footer Sections Starts here */
 footer{
-    height: 40vh;
+    height: 35dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +137,13 @@ footer{
     padding: 15px;
 }
 .social-item >a >img{
-    width: 50px;
+    width: 50px !important;
     height: 50px;
+}
+
+.twitter-icon{
+    height: 30px !important;
+    margin-top: 10px;
 }
 /* Media Query */
 @media only screen and (max-width: 991px) {
@@ -138,5 +185,11 @@ footer{
     }
     .bg{
         width: 90%;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .links-block{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
