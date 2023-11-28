@@ -24,18 +24,27 @@
   <div id="demo"></div>
   
       <section class="weather-sec">
-        <div class="main">
+        <div class="main" id="main">
           <div class="input-sec">
-            <span>Search City: </span><input type="text" id="searchInput">
+            <input type="text"placeholder="Enter your city" id="searchInput">
             <a href="javascript:void(0)" onclick="searchBtn()" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
           <div class="input-main">
-            <img src="images/sun_2698194.png" alt="">
-            <p>99</p>
-            <div>
-              <p>Wind Speed</p>
-              <p>Rain Chances</p>
-              <p>Humidity</p>
+            <h1>City</h1>
+            <p>Date</p>
+            <div class="img-sec">
+                <div>
+                  <img src="images/sun_2698194.png" alt="">
+                  <p>Sunny</p>
+                </div>
+                <div>
+                  <h1>8<sup>o <span>c</span></sup></h1>
+                  <p>max-temp|min-temp</p>
+                </div>
+            </div>
+              <p>Wind: km/h</p>
+              <p>Humidity: %</p>
+              <p>Percipitation: %</p>
             </div>
           </div>
         </div>
