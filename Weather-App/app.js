@@ -34,13 +34,13 @@ async function checkWeather(queryByCity){
           <p>${data.weather[0].main}</p>
         </div>
         <div>
-          <h1>${Math.round(data.main.temp)}<sup>o <span>c</span></sup></h1>
-          <p>${Math.round(data.main.temp_max)}<sup>o</sup>|${Math.round(data.main.temp_min)}<sup>o</sup></p>
+          <h1>${Math.round(data.main.temp)}<sup><span class="tem-deg">o</span>c</sup></h1>
+          <p><i class="fa-solid fa-temperature-arrow-up"></i>${Math.round(data.main.temp_max)}<sup>o</sup>|<i class="fa-solid fa-temperature-arrow-down"></i>${Math.round(data.main.temp_min)}<sup>o</sup></p>
         </div>
     </div>
-      <p>Wind: ${Math.round(data.wind.speed)}km/h</p>
+      <p>Wind: <i class="fa-solid fa-wind"></i> ${Math.round(data.wind.speed)}km/h</p>
       <p>Humidity: ${data.main.humidity}%</p>
-      <p>Percipitation: %</p>
+      <p>Country: ${data.sys.country}</p>
     </div>
   </div>
           `

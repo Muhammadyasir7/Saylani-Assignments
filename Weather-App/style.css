@@ -5,10 +5,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto Mono', monospace;
+    height: 98dvh;
 }
 .weather-sec{
-    height: 80vh;
-    margin: 0 auto;
+    height: 80dvh;
+    margin: 40px auto;
 }
 .main{
     background-color: rgb(240, 237, 237);
@@ -59,3 +60,25 @@ h1{
     width: 50%;
     margin: 20px 0px;
 }
+.fa-solid{
+    margin-right: 5px;
+}
+.tem-deg{
+    font-size: 1rem;
+}
+@media screen and (max-width: 580px) {
+    .main{
+        width: 98%;
+    }
+    .input-sec{
+        width: 99%;
+        margin-bottom: 20px !important;
+    }
+    .input-main{
+        margin: 0px;
+    }
+    body{
+        height: 93.5vh;
+    }
+}
+
