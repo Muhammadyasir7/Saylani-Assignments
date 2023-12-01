@@ -20,6 +20,30 @@ async function checkWeather(queryByCity){
     var data = await response.json();
     console.log(data)
     let main = document.getElementById("main")
+    let weatherObj = {
+      smoke : "https://cdn-icons-png.flaticon.com/512/4414/4414055.png",
+      haze : "https://cdn-icons-png.flaticon.com/512/182/182266.png",
+      sunny : "https://cdn.dribbble.com/users/2120934/screenshots/6193524/19_mostlysunny.gif",
+      rain : "https://cdn.dribbble.com/users/2120934/screenshots/6193512/11_rain.gif",
+      snow: "https://cdn.dribbble.com/users/2120934/screenshots/6193458/13_snow.gif"
+    }
+    let imgSrc;
+
+    if(data.weather[0].main == "Haze"){
+      imgSrc = weatherObj.haze
+    }
+    else if(data.weather[0].main == "Smoke"){
+      imgSrc = weatherObj.smoke
+    }
+    else if(data.weather[0].main == "Snow"){
+      imgSrc = weatherObj.snow
+    }
+    else if (data.weather[0].main == "Rain"){
+      imgSrc = weatherObj.rain
+    }
+    else{
+      imgSrc = "images/sun_2698194.png"
+    }
     main.innerHTML = `
     <div class="input-sec">
     <input type="text"placeholder="Enter your city" id="searchInput">
@@ -30,7 +54,8 @@ async function checkWeather(queryByCity){
     <p>${day},${date.getDate()} ${monthYear},${time}</p>
     <div class="img-sec">
         <div>
-          <img src="images/sun_2698194.png" alt="">
+        <img src=${imgSrc} alt="smoke-icon" />
+      
           <p>${data.weather[0].main}</p>
         </div>
         <div>
