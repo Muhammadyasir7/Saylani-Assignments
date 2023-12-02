@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.weather-sec{
     background-image: url(images/bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Roboto Mono', monospace;
-    height: 98dvh;
-}
-.weather-sec{
-    height: 80dvh;
-    margin: 40px auto;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .main{
     background-color: rgb(240, 237, 237);
-    width: 80%;
-    margin: 10px auto;
-    border-radius: 5px;
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 10px;
+    opacity: 0.9;
+
 }
 .input-sec{
     width: 95%;
@@ -30,10 +36,8 @@ input{
 }
 #search> i{
     font-size: 28px;
-    color: aqua;
     position: relative;
     top: 6px;
-    /* border: 1px solid black; */
 }
 input{
     width: 90%;
@@ -43,7 +47,13 @@ input{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    margin: 30px auto;
+    width: 70%;
+    
+}
+
+.input-main >img{
+    margin: 0;
 }
 img{
     width: 50px;
@@ -57,14 +67,24 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    margin: 20px 0px;
+    align-content: center;
+    width: 100%;
+}
+.input-main>p{
+    margin-top: 15px;
+}
+.input-main >h1{
+    margin-bottom: 0px;
 }
 .fa-solid{
     margin-right: 5px;
 }
 .tem-deg{
     font-size: 1rem;
+}
+p{
+    color: black !important;
+    font-weight: 500;
 }
 @media screen and (max-width: 580px) {
     .main{
@@ -76,9 +96,13 @@ h1{
     }
     .input-main{
         margin: 0px;
+        width: 100%;
     }
     body{
         height: 93.5vh;
+    }
+    input{
+        width: 80%;
     }
 }
 

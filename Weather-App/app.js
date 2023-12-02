@@ -53,12 +53,12 @@ async function checkWeather(queryByCity){
     <h1>${data.name}</h1>
     <p>${day},${date.getDate()} ${monthYear},${time}</p>
     <div class="img-sec">
-        <div>
+        <div class="input-main">
         <img src=${imgSrc} alt="smoke-icon" />
       
-          <p>${data.weather[0].main}</p>
+          <h1>${data.weather[0].main}</h1>
         </div>
-        <div>
+        <div class="input-main">
           <h1>${Math.round(data.main.temp)}<sup><span class="tem-deg">o</span>c</sup></h1>
           <p><i class="fa-solid fa-temperature-arrow-up"></i>${Math.round(data.main.temp_max)}<sup>o</sup>|<i class="fa-solid fa-temperature-arrow-down"></i>${Math.round(data.main.temp_min)}<sup>o</sup></p>
         </div>
