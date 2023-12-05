@@ -3,19 +3,41 @@ var sec =document.getElementById("sec");
 var hour = 0;
 var min = 0;
 var sec = 0;
-var btnStart = document.getElementById("startBtn");
 
 var timer = false
 var count = 0;
+var setTime;
+var btnStart = document.getElementById("startBtn");
+
+var stopDiv = document.getElementById("stopwatch");
+stopDiv.addEventListener("click",function(){
+    document.getElementById("mainDiv").innerHTML = `
+            <span class="num" id="hourss">0</span>
+            <span>H</span>
+            <span class="num" id="min">0</span>
+            <span>M</span>
+            <span class="num" id="sec">00</span>
+            <span>S</span>
+            <span class="num" id="timeNum">00</span>
+    `
+    document.getElementById("bottomDiv").innerHTML = `
+            <button onclick="start()" id="startBtn">START</button>
+            <button onclick="stop()">STOP</button>
+            <button onclick="reset()">RESET</button>
+    `
+})
 
 function start(){
     timer = true;
-    stopwatch()
+    setTime = setInterval(stopwatch,10)
+    btnStart.style.backgroundColor = "black"
     btnStart.setAttribute("disabled","disabled")
+    return setTime
 }
 
 function stop(){
     timer =false;
+    clearInterval(setTime)
     btnStart.removeAttribute("disabled")
 }
 function reset(){
@@ -31,56 +53,45 @@ function reset(){
     mints.innerHTML = min
     var hourss= document.getElementById("hourss");
     hourss.innerHTML = hour;
-    // clearInterval(start)
+    btnStart.removeAttribute("disabled")
+    clearInterval(setTime)
 }
+
 
 function stopwatch(){
     if(timer == true){
-        count += 1;
-        var timeNum = document.getElementById("timeNum")
-        timeNum.innerHTML = count
-        if(count == 99){
-            count = 0;
-            var second = document.getElementById('sec')
-            sec += 1;
-            second.innerHTML = sec;
-        }
-
-        if(sec == 59 && count == 59){
-            count = 0;
-            sec = 0;
-
-            var mints= document.getElementById("min");
-            min += 1;
-            mints.innerHTML = min
-        }
-        if(min == 59 && sec == 59 && count == 59){
-            count = 0;
-            sec = 0;
-            min = 0;
-
-            var hourss= document.getElementById("hourss");
-            hour += 1;
-            hourss.innerHTML = hour;
-
-        }
+                count += 1;
+                var timeNum = document.getElementById("timeNum")
+                timeNum.innerHTML = count
+                if(count == 99){
+                    count = 0;
+                    var second = document.getElementById('sec')
+                    sec += 1;
+                    second.innerHTML = sec;
+                }
         
-    }
-    setTimeout("stopwatch()",10)
+                if(sec == 59 && count == 59){
+                    count = 0;
+                    sec = 0;
+        
+                    var mints= document.getElementById("min");
+                    min += 1;
+                    mints.innerHTML = min
+                }
+                if(min == 59 && sec == 59 && count == 59){
+                    count = 0;
+                    sec = 0;
+                    min = 0;
+        
+                    var hourss= document.getElementById("hourss");
+                    hour += 1;
+                    hourss.innerHTML = hour;
+        
+                }
+            }     
 }
 
-var stopDiv = document.getElementById("stopwatch");
-stopDiv.addEventListener("click",function(){
-    document.getElementById("mainDiv").innerHTML = `
-            <span class="num" id="hourss">0</span>
-            <span>H</span>
-            <span class="num" id="min">0</span>
-            <span>M</span>
-            <span class="num" id="sec">00</span>
-            <span>S</span>
-            <span class="num" id="timeNum">00</span>
-    `
-})
+
 
 function timers(){
     document.getElementById("mainDiv").innerHTML = `

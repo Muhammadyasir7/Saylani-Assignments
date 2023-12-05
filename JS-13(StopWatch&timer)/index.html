@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="main">
+    <div class="body">
+    <section class="main" id="main-div">
         <div class="head">
             <div><i class="fa-regular fa-hourglass"></i><a onclick="timers()" href="javascript:void(0)">TIMER</a></div>
             <div><i class="fa-solid fa-stopwatch"></i><a href="javascript:void(0)" id="stopwatch">STOPWATCH</a></div>
@@ -19,12 +20,14 @@
             <span>M</span>
 
         </div>
-        <div class="head bottom">
-            <button onclick="start()" id="startBtn">START</button>
-            <button onclick="stop()">STOP</button>
-            <button onclick="reset()">RESET</button>
+        <div class="head bottom" id="bottomDiv">
+            <button onclick="" >START</button>
+            <button onclick="">STOP</button>
+            <button onclick="">RESET</button>
         </div>
     </section>
+    </div>
+
 
     <script src="https://kit.fontawesome.com/0151bb5b76.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
