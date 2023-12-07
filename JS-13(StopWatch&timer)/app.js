@@ -7,7 +7,6 @@ var sec = 0;
 var timer = false
 var count = 0;
 var setTime;
-var btnStart = document.getElementById("startBtn");
 
 var stopDiv = document.getElementById("stopwatch");
 stopDiv.addEventListener("click",function(){
@@ -25,12 +24,13 @@ stopDiv.addEventListener("click",function(){
             <button onclick="stop()">STOP</button>
             <button onclick="reset()">RESET</button>
     `
-})
+}
+)
 
 function start(){
     timer = true;
     setTime = setInterval(stopwatch,10)
-    btnStart.style.backgroundColor = "black"
+    var btnStart = document.getElementById("startBtn");
     btnStart.setAttribute("disabled","disabled")
     return setTime
 }
@@ -38,6 +38,7 @@ function start(){
 function stop(){
     timer =false;
     clearInterval(setTime)
+    var btnStart = document.getElementById("startBtn");
     btnStart.removeAttribute("disabled")
 }
 function reset(){
@@ -53,6 +54,7 @@ function reset(){
     mints.innerHTML = min
     var hourss= document.getElementById("hourss");
     hourss.innerHTML = hour;
+    var btnStart = document.getElementById("startBtn");
     btnStart.removeAttribute("disabled")
     clearInterval(setTime)
 }
@@ -95,9 +97,9 @@ function stopwatch(){
 
 function timers(){
     document.getElementById("mainDiv").innerHTML = `
-            <span class="num" id="hourss">0</span>
-            <span>H</span>
-            <span class="num" id="min">0</span>
-            <span>M</span>
+    <input type="number" class="num-inp" maxlength="2" value="05" min="0" max="99" placeholder="05">
+    <span>H</span>
+    <input type="number" class="num-inp" maxlength="2" value="00" max="99" placeholder="00">
+    <span>M</span>
     `
 }

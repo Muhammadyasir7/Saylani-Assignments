@@ -6,7 +6,7 @@ let monthYear = month[date.getMonth()]
 let time = date.getHours()+":"+date.getMinutes()
 // AppId and ApiUrl
 const appId = "&appid=1ae8b62d6d656b2b2f9eb7b1f9203317";
-const apiUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q="
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
 
 
