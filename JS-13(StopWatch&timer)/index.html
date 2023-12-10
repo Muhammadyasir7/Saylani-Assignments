@@ -10,19 +10,21 @@
     <div class="body">
     <section class="main" id="main-div">
         <div class="head">
-            <div><i class="fa-regular fa-hourglass"></i><a onclick="timers()" href="javascript:void(0)">TIMER</a></div>
+            <div><i class="fa-regular fa-hourglass"></i><a id="timers" href="javascript:void(0)">TIMER</a></div>
             <div><i class="fa-solid fa-stopwatch"></i><a href="javascript:void(0)" id="stopwatch">STOPWATCH</a></div>
         </div>
         <div id="mainDiv">
-            <input type="number" class="num-inp" maxlength="2" value="05" min="0" max="99" placeholder="05">
+            <input type="number" id="hourTimer" class="num-inp" maxlength="2" value="05" min="0" max="99" placeholder="05">
             <span>H</span>
-            <input type="number" class="num-inp" maxlength="2" value="00" max="99" placeholder="00">
+            <input id="minTimer" type="number" class="num-inp" maxlength="2" value="00" max="99" placeholder="00">
             <span>M</span>
+            <input type="number" id="secTimer" class="num-inp" maxlength="2" value="00" max="99" placeholder="00">
+            <span>S</span>
         </div>
         <div class="head bottom" id="bottomDiv">
-            <button onclick="" >START</button>
-            <button onclick="">STOP</button>
-            <button onclick="">RESET</button>
+            <button onclick="timerFunc()" id="timerStart">START</button>
+            <button onclick="stopTimer()">STOP</button>
+            <button onclick="resetTimer()">RESET</button>
         </div>
     </section>
     </div>
