@@ -134,6 +134,9 @@ function renderPage(){
 
     for(var i =0; i < options.length; i++){
         if(options[i].checked){
+            index++
+            sec =59;
+            min =1;
             if(options[i].value == arrObj[index -1].answer){
                 score++;
             }
@@ -152,10 +155,11 @@ function renderPage(){
                 </div>
             </div>
             `
-        document.querySelector(".next").style.display="none";
+        // document.querySelector(".next").style.display="none";
         nextDiv.innerHTML = `
-        <button onclick="backPage()" class="back">Go Back</button>
+        // <button onclick="backPage()" class="back">Go Back</button>
         `
+        clearInterval(resetValue)
         return
     }
 
@@ -182,11 +186,13 @@ function renderPage(){
             </div>
            
             <hr>
+        <button onclick="renderPage()" class="next" id="next">Next</button>
+    
         </div>
     </div>
     </div>
     `
-        index++
+    
 }
 
 function backPage(){
@@ -195,20 +201,25 @@ function backPage(){
     testPage.style.display = "none"
 }
 
-// var sec= 10;
-// var min = 1;
-// function abc(){
-//     var timers = document.getElementById("timer")
-//     timers.innerHTML = min+":"+ (sec -= 1)
-//     if(sec <1 && min <1){
-//         resetTimer;
-//     }
-//     if(sec<1){
-//         sec =10;
-//         min--
-//     }
+let sec=59;
+let min = 0;
+const myfunc = function abc(){
+    let timers = document.getElementById("timer")
+    if(timers){
+    timers.innerHTML = min+":"+ (sec -= 1)
+        if(sec == 0 && min == 0){
+            index++;
+            renderPage();
+            min = 1;
+            sec = 59
+        }
+        if(min > 0 && sec ==0){
+            sec = 60;
+            sec -= 1;
+            min--
+        }
+    }
 
-// }
-// var resetValue = setInterval(abc,1000);
+}
+let resetValue = setInterval(myfunc,1000);
 
-// clearInterval(resetValue)

@@ -79,3 +79,26 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+@media only screen and (max-width : 780px) {
+    .main{
+        width: 98%;
+    }
+}
+@media only screen and (max-width : 485px) {
+    a{
+        font-size: 18px;
+    }
+    .num, .num-inp{
+        font-size: 60px;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        width: 70px;
+        margin-left: 6px;
+    }
+    .sec-num{
+        margin: 0px;
+    }
+    
+}

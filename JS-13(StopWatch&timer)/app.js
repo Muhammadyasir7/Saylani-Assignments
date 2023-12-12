@@ -103,7 +103,7 @@ timers.addEventListener("click",function(){
     <input type="number" id="minTimer" class="num-inp" maxlength="2" value="00" max="99" placeholder="00">
     <span>M</span>
     <input type="number" id="secTimer" class="num-inp" maxlength="2" value="00" max="99" placeholder="00">
-    <span>M</span>
+    <span>S</span>
     `
     document.getElementById("bottomDiv").innerHTML = `
     <button onclick="timerFunc()" id="timerStart">START</button>

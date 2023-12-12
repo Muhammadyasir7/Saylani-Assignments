@@ -96,6 +96,7 @@ h1{
     align-items: center;
     background-color: white;
     display: none;
+    height: auto;
 }
 .first-div > button{
     width: 200px;

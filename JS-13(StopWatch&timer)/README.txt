@@ -1,1 +1,1 @@
-Website Link = https://timer-stopwatch-by-yasir.netlify.app/
+Website Link = https://stopwatch-timerr-by-yasir.netlify.app/
