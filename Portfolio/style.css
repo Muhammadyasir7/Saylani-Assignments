@@ -95,8 +95,13 @@ body{
 .card-img-top{
     height: 200px;
 }
+.card{
+    border: 1px solid silver;
+    border-radius: 10px;
+}
 .card-body{
-    color: #0f1624;
+    background-color: #0f1624;
+    color: #fff;
 }
 
 /* Contact Section Starts Here */
