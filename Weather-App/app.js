@@ -1,7 +1,7 @@
 const month = ["Jan","Fab","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
-const weekDays = ["Mon","Tue","Wed","Thurs","Fri","Sat","Sun"];
+const weekDays = ["Sun","Mon","Tue","Wed","Thurs","Fri","Sat"];
 const date= new Date();
-let day = weekDays[date.getDay() -1]
+let day = weekDays[date.getDay()]
 let monthYear = month[date.getMonth()]
 let time = date.getHours()+":"+date.getMinutes()
 // AppId and ApiUrl
