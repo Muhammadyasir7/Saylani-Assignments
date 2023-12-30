@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasir Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -83,7 +84,9 @@
     <!-- Hero Section -->
     <section>
         <div class="hero">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <h1>Hi,<br> I'm Muhammad Yasir</h1>
                 <p>I am on the path to becoming a skilled Frontend Developer,<br>
                     dedicated to shaping the digital world with creative and responsive web interfaces
@@ -93,7 +96,10 @@
                 </p>
                 <button class="btn-contact">Contact Me</button>
             </div>
-            <div class="bg-pic">
+            <div class="bg-pic" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="300"
+            data-aos-duration="500">
                 <img src="images/drawing.png" height="480px" alt="" class="bg">
             </div>
         </div>
@@ -108,7 +114,7 @@
             <div>
                 <img src="images/36721120_2155924434637122_7468773511553613824_n.jpg" height="500px" class="profile-img" alt="">
             </div>
-            <div class="about-text">
+            <div class="about-text" >
                 <p>Hello! My name is Muhammad Yasir and I enjoy Coding and my interest in web development started back in 2022
                      when I decided to try  taught me a lot about HTML & CSS!
 
@@ -158,7 +164,10 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <div class="col" >
               <div class="card h-100">
                 <a href="https://6511caa8cb8af903e7308565--fluffy-mochi-2a98b2.netlify.app/" target="_blank"><img src="images/screencapture-6511caa8cb8af903e7308565-fluffy-mochi-2a98b2-netlify-app-2023-11-24-19_33_19.png" class="card-img-top" alt="Palm Springs Road"/></a>
                 <div class="card-body">
@@ -167,8 +176,8 @@
                 </div>
               </div>
             </div>
+          </div>
             <div class="col">
-              <div class="card h-100">
                 <a href="https://terebyyasir.netlify.app/" target="_blank"><img src="images/screencapture-terebyyasir-netlify-app-2023-11-24-19_19_15.png" class="card-img-top" alt="Los Angeles Skyscrapers"/></a>
                 <div class="card-body">
                   <h5 class="card-title">Tere by Yasir</h5>
@@ -193,8 +202,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Grumpy by Yasir</h5>
                   <p class="card-text">
-                    This is a longer card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    This is a simple clone fully responsive and HTML,CSS and bootstrap technologies used.
                   </p>
                 </div>
               </div>
@@ -205,7 +213,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Salt'n Paper Clone</h5>
                   <p class="card-text">
-                    This is a simple clone and only html, css and bootstrap technologies used.
+                    This is a simple clone and only HTML, CSS and Bootstrap technologies used.
                   </p>
                 </div>
               </div>
@@ -215,7 +223,9 @@
     </section>
     <!-- Projects Section Ends here -->
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
         <h1>Contact</h1>
         <div class="contact-main">
             <form style="width: 26rem;">
@@ -257,7 +267,9 @@
         </div>
     </section>
     <footer>
-        <div>
+        <div data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <ul class="links-block">
                 <li class="social-item"><a href="mailto:optimisticyasir@outlook.com" target="_blank"><img src="images/email-icon.svg" alt=""></a></li>
                 <li class="social-item"><a href="https://www.twitter.com/Yasir_lala7" target="_blank" class="twit"><img src="https://assets-global.website-files.com/6536b19a1bb2f6693bdaa5b8/6536b19a1bb2f6693bdaa599_x-logo.svg" class="twitter-icon" alt=""></a></li>
@@ -266,12 +278,17 @@
                 <li class="social-item"><a href="https://www.linkedin.com/in/muhammad-yasir-hussain" target="_blank"><img src="images/linkedin-icon.svg" alt=""></a></li>
             </ul>
         </div>
-        <p>&#169 Muhammad Yasir Hussain 2023</p>
+
+        <p >&#169 Muhammad Yasir Hussain 2023</p>
     </footer>
    
     <script src="https://kit.fontawesome.com/0151bb5b76.js" crossorigin="anonymous"></script>
     <!-- MDB -->
     <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
