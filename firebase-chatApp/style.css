@@ -1,7 +1,43 @@
+/* :root {
+    --mdb-body-color: rgb(41, 41, 41);
+    --white: #ffffff;
+  }
+body {
+
+    color: var(--mdb-body-color);
+    background-color: var(--mdb-body-bg);
+}
+a{
+    --mdb-link-decoration: none;
+    text-decoration: var(--mdb-link-decoration);
+    color: var(--mdb-body-color);
+}
+.form-check-input[type=checkbox]:checked {
+    background-image: none;
+    background-color: black;
+    border: 1px solid black;
+} */
 .login-sec{
     width: 35dvw;
     margin: 0 auto;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
+}
+.heading{
+    text-align: center;
+    margin: 20px;
+}
+/* .btn-primary{
+    background-color: black;
+    color: white;
+}
+.btn-primary:hover{
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+} */
+.main{
+    height: 100dvh;
+    width: 100dvw;
+    border: 1px solid black;
 }
