@@ -1,7 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut ,signInWithPopup,GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getFirestore,doc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-
+export{
+  getFirestore,doc,setDoc
+}
 const firebaseConfig = {
   apiKey: "AIzaSyBNf3est7oknSdpUPdhxWXjtRpXkuDz9ao",
   authDomain: "chatapp-9b056.firebaseapp.com",
@@ -16,6 +19,7 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
+const db = getFirestore(app);
 
 const createUser = ()=>{
     let userName = document.getElementById("registerName");
@@ -48,14 +52,20 @@ const register = document.getElementById("register");
 register && register.addEventListener("click",createUser)
 
 
-const login = ()=>{
+const login =()=>{
     const email = document.getElementById("loginName")
     const password = document.getElementById("loginPassword")
 signInWithEmailAndPassword(auth, email.value, password.value)
 
-  .then((userCredential) => {
+  .then(async(userCredential) => {
     // Signed in 
     const user = userCredential.user;
+    console.log(user.uid,user)
+    // await setDoc(doc(db, "user", `'${user.uid}'`), {
+    //   name: user.name,
+    //   email: "CA",
+    //   country: "USA"
+    // })
     Swal.fire({
       position: "center",
       icon: "success",
@@ -63,9 +73,9 @@ signInWithEmailAndPassword(auth, email.value, password.value)
       showConfirmButton: false,
       timer: 1500
     });
-    setTimeout(()=>{
-      location.href = "chatui.html"
-    },2000)
+    // setTimeout(()=>{
+    //   location.href = "chatui.html"
+    // },2000)
     
     // ...
   })

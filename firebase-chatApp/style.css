@@ -40,4 +40,33 @@ a{
     height: 100dvh;
     width: 100dvw;
     border: 1px solid black;
+    display: flex;
+    background-color:rgb(34, 34, 34)
+}
+aside{
+    width: 40dvw;
+}
+.chat-sec{
+    border: 1px solid green;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+}
+.user-icon{
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.form-control{
+    border: 1px solid black !important;
+}
+.person{
+    border: 1px solid black;
+    height: 10vh;
 }
