@@ -14,7 +14,7 @@ function App() {
       <h3>{obj.name}</h3>
       <div>{data.map((v,i)=> <p key={i}>{v} </p>)}</div>
       <div>{list.map((v,i)=> <p key={i}>{v.name}</p>)}</div>
-      <p>{complex.map((v,i)=> <p key={i}>{v.company}</p>)})</p>
+      <p>{complex.map((v,i)=> <p key={i}>{v.company}</p>)}</p>
 
     </div>
   );
