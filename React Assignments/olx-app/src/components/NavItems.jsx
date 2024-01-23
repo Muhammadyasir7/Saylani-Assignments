@@ -5,10 +5,8 @@ import LOGO from "../assets/OLX-logo.png"
 import LARGELOGO from "../assets/OLX-Symbol.png"
 import ICONBORDER from "../assets/iconSellBorder.svg"
 import SAVEPLUS from "../assets/save-plus.svg"
-import InputSearch from "./bootstrap/InputSearch";
-
-
-
+import InputSearch from "./InputSearch/InputSearch";
+import InputLocation from "./InputSearch/InputLocation";
 
 function NavbarList(){
     return (
@@ -25,12 +23,13 @@ function NavbarList(){
             <div className="sec-div">
                 <ul>
                     <li><img className="largeLogo" src={LARGELOGO} alt="" /></li>
-                    <li></li>
+                    <li><InputLocation /></li>
                     <li><InputSearch/></li>
-                    <li>login</li>
-                    <li className="iconBorder"><img src={ICONBORDER} alt="" />
-                    <img src={SAVEPLUS} alt="" />
-                    <span>SELL</span>
+                    <li className="login-btn">Login</li>
+                    <li className="iconBorder">
+                        <img src={ICONBORDER} alt="" />
+                        <img className="plus-icon" src={SAVEPLUS} alt="" />
+                        <span>SELL</span>
                     </li>
                 </ul>
             </div>

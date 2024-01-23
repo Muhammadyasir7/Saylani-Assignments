@@ -7,15 +7,20 @@ $primaryColor :  #002f34;
 }
 
 .navbar-items{
-    height: 25vh;
+    min-height: 20dvh;
+    max-height: auto;
     background-color: #f7f8f8;
+    padding-bottom: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 nav{
     ul{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 25%;
-        padding: 15px;
+        max-width: 25%;
+        padding-top: 10px;
     }
     li{
         list-style: none;
@@ -42,16 +47,38 @@ nav{
     .sec-div{
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
             li{
                 list-style: none;
                 .largeLogo{
                     width: 60px;
                 }
-                // .iconBorder{
+            }
+            .iconBorder{
+                position: relative;
+                .plus-icon{
+                    position: absolute;
+                    left: 20px;
+                    top: 15px;
+                }
+                span{
+                        position: absolute;
+                        left: 40px;
+                        top: 13px;
+                        font-size: 14px;
+                        font-weight: bold;
                     
-                // }
+                }
+            }
+            .login-btn{
+                color: $primaryColor;
+                font-weight: bold;
+                border-bottom: 2px solid $primaryColor;
+                &:hover{
+                    border-bottom: none;
+                }
             }
         }
     }
